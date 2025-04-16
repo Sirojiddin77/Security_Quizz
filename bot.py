@@ -116,6 +116,7 @@ SAMPLE_QUESTIONS = [
     {'theme': 'Security Governance', 'question': 'What is risk assessment in security governance?', 'correct_answer': 'A', 'options': 'A) Identifying and evaluating security risks\nB) Encrypting data\nC) Increasing system performance\nD) Managing user accounts'}
 ]
 
+
 def populate_sample_data():
     conn = sqlite3.connect('first_bot.db')
     c = conn.cursor()

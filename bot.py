@@ -1724,6 +1724,866 @@ topics_ru = {
     ]
 }
 
+# O‘zbek tilidagi mavzular va savollar
+topics_uz = {
+    "Asosiy tushunchalar": [
+        {
+            "question": "1. Himoyalanadigan ma'lumot tushunchasini aniqlang",
+            "options": {
+                "a": "Organlar va/yoki ijrochilar, ular foydalanadigan ma'lumotlarni himoya qilish texnikasi, shuningdek, himoyalangan ma'lumot obyektlari to'plami bo'lib, ma'lumotlarni himoya qilish sohasidagi tegishli hujjatlarda belgilangan qoidalar va normalarga muvofiq tashkil etilgan va faoliyat yuritadi",
+                "b": "Ma'lumotlarni himoya qilish natijalarining ma'lumotlarni himoya qilish maqsadiga moslik darajasi",
+                "c": "Himoyalanadigan ma'lumotlarning oqib chiqishini oldini olish, ruxsatsiz va qasddan ta'sirlarni oldini olishga qaratilgan faoliyat",
+                "d": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy, apparat-dasturiy vositalar, moddalar va/yoki materiallar",
+                "e": "Mulk obyekti bo‘lgan va qonuniy hujjatlar talablariga yoki ma'lumot egasi (davlat, yuridik shaxs, shaxslar guruhi yoki jismoniy shaxs) tomonidan belgilangan talablarga muvofiq himoyalanishi kerak bo‘lgan ma'lumot"
+            },
+            "correct": "e"
+        },
+        {
+            "question": "2. Ma'lumotlarni himoya qilish tushunchasini aniqlang",
+            "options": {
+                "a": "Himoyalanadigan ma'lumotlarning oqib chiqishini oldini olish, ruxsatsiz va qasddan ta'sirlarni oldini olishga qaratilgan faoliyat",
+                "b": "Mulk obyekti bo‘lgan va qonuniy hujjatlar talablariga yoki ma'lumot egasi (davlat, yuridik shaxs, shaxslar guruhi yoki jismoniy shaxs) tomonidan belgilangan talablarga muvofiq himoyalanishi kerak bo‘lgan ma'lumot",
+                "c": "Ma'lumotlarni himoya qilish natijalarining belgilangan maqsadga moslik darajasi",
+                "d": "Organlar va/yoki ijrochilar, ular foydalanadigan ma'lumotlarni himoya qilish texnikasi, shuningdek, himoyalangan obyektlar to'plami bo'lib, ma'lumotlarni himoya qilish sohasidagi tegishli qonuniy, tashkiliy va normativ hujjatlarda belgilangan qoidalarga muvofiq tashkil etilgan va faoliyat yuritadi",
+                "e": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy vositalar, moddalar va/yoki materiallar"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "3. Ma'lumotlarni himoya qilish samaradorligi tushunchasini aniqlang",
+            "options": {
+                "a": "Himoyalanadigan ma'lumotlarning oqib chiqishini oldini olish, ruxsatsiz va qasddan ta'sirlarni oldini olishga qaratilgan faoliyat",
+                "b": "Mulk obyekti bo‘lgan va qonuniy hujjatlar talablariga yoki ma'lumot egasi (davlat, yuridik shaxs, shaxslar guruhi yoki jismoniy shaxs) tomonidan belgilangan talablarga muvofiq himoyalanishi kerak bo‘lgan ma'lumot",
+                "c": "Ma'lumotlarni himoya qilish natijalarining belgilangan maqsadga moslik darajasi",
+                "d": "Organlar va/yoki ijrochilar, ular foydalanadigan ma'lumotlarni himoya qilish texnikasi, shuningdek, himoyalangan obyektlar to'plami bo'lib, ma'lumotlarni himoya qilish sohasidagi tegishli qonuniy, tashkiliy va normativ hujjatlarda belgilangan qoidalarga muvofiq tashkil etilgan va faoliyat yuritadi",
+                "e": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy vositalar, moddalar va/yoki materiallar"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "4. Ma'lumotlarni himoya qilish tizimi tushunchasini aniqlang",
+            "options": {
+                "a": "Himoyalanadigan ma'lumotlarning oqib chiqishini oldini olish, ruxsatsiz va qasddan ta'sirlarni oldini olishga qaratilgan faoliyat",
+                "b": "Mulk obyekti bo‘lgan va qonuniy hujjatlar talablariga yoki ma'lumot egasi (davlat, yuridik shaxs, shaxslar guruhi yoki jismoniy shaxs) tomonidan belgilangan talablarga muvofiq himoyalanishi kerak bo‘lgan ma'lumot",
+                "c": "Ma'lumotlarni himoya qilish natijalarining belgilangan maqsadga moslik darajasi",
+                "d": "Organlar va/yoki ijrochilar, ular foydalanadigan ma'lumotlarni himoya qilish texnikasi, shuningdek, himoyalangan obyektlar to'plami bo'lib, ma'lumotlarni himoya qilish sohasidagi tegishli qonuniy, tashkiliy va normativ hujjatlarda belgilangan qoidalarga muvofiq tashkil etilgan va faoliyat yuritadi",
+                "e": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy vositalar, moddalar va/yoki materiallar"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "5. Ma'lumotlarni himoya qilish vositalari tushunchasini aniqlang",
+            "options": {
+                "a": "Himoyalanadigan ma'lumotlarning oqib chiqishini oldini olish, ruxsatsiz va qasddan ta'sirlarni oldini olishga qaratilgan faoliyat",
+                "b": "Mulk obyekti bo‘lgan va qonuniy hujjatlar talablariga yoki ma'lumot egasi (davlat, yuridik shaxs, shaxslar guruhi yoki jismoniy shaxs) tomonidan belgilangan talablarga muvofiq himoyalanishi kerak bo‘lgan ma'lumot",
+                "c": "Ma'lumotlarni himoya qilish natijalarining belgilangan maqsadga moslik darajasi",
+                "d": "Organlar va/yoki ijrochilar, ular foydalanadigan ma'lumotlarni himoya qilish texnikasi, shuningdek, himoyalangan obyektlar to'plami bo'lib, ma'lumotlarni himoya qilish sohasidagi tegishli qonuniy, tashkiliy va normativ hujjatlarda belgilangan qoidalarga muvofiq tashkil etilgan va faoliyat yuritadi",
+                "e": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy vositalar, moddalar va/yoki materiallar"
+            },
+            "correct": "e"
+        }
+    ],
+    "Ma'lumot xavfsizligidagi tahdidlar va buzg‘unchi modeli": [
+        {
+            "question": "6. Obyekt xavfsizligi tahdidi tushunchasini aniqlang",
+            "options": {
+                "a": "Obyektga bevosita yoki bilvosita zarar yetkazishi mumkin bo‘lgan mumkin bo‘lgan ta'sir",
+                "b": "Obyektdagi ma'lumot xavfsizligi buzilishiga olib keladigan ichki sabablar",
+                "c": "Xavfsizlik tahdidining potentsial antropogen, texnogen yoki tabiiy tashuvchilari",
+                "d": "Mavjud zaifliklar orqali tahdid manbai bilan o‘zaro ta'sir natijasida tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlar"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "7. Obyektning zaifligi tushunchasini aniqlang",
+            "options": {
+                "a": "Obyektga bevosita yoki bilvosita zarar yetkazishi mumkin bo‘lgan mumkin bo‘lgan ta'sir",
+                "b": "Obyektdagi ma'lumot xavfsizligi buzilishiga olib keladigan ichki sabablar",
+                "c": "Xavfsizlik tahdidining potentsial antropogen, texnogen yoki tabiiy tashuvchilari",
+                "d": "Mavjud zaifliklar orqali tahdid manbai bilan o‘zaro ta'sir natijasida tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlar"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "8. Tahdid manbai tushunchasini aniqlang",
+            "options": {
+                "a": "Obyektga bevosita yoki bilvosita zarar yetkazishi mumkin bo‘lgan mumkin bo‘lgan ta'sir",
+                "b": "Obyektdagi ma'lumot xavfsizligi buzilishiga olib keladigan ichki sabablar",
+                "c": "Xavfsizlik tahdidining potentsial antropogen, texnogen yoki tabiiy tashuvchilari",
+                "d": "Mavjud zaifliklar orqali tahdid manbai bilan o‘zaro ta'sir natijasida tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlar"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "9. Hujum tushunchasini aniqlang",
+            "options": {
+                "a": "Mavjud zaifliklar orqali tahdid manbai bilan o‘zaro ta'sir natijasida tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlar",
+                "b": "Ma'lumotlarni himoya qilish uchun mo‘ljallangan yoki ishlatiladigan texnik, dasturiy vositalar, moddalar va/yoki materiallar",
+                "c": "Xavfsizlik tahdidining potentsial antropogen, texnogen yoki tabiiy tashuvchilari",
+                "d": "Obyektdagi ma'lumot xavfsizligi buzilishiga olib keladigan ichki sabablar",
+                "e": "Obyektga bevosita yoki bilvosita zarar yetkazishi mumkin bo‘lgan mumkin bo‘lgan ta'sir"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "10. Ma'lumotlarning maxfiyligi nima?",
+            "options": {
+                "a": "Tizimning tasodifiy yoki qasddan buzilishlar yoki yo‘q qiluvchi ta'sirlar sharoitida ma'lumotning semantik ma'noda o‘zgarmasligi xususiyati",
+                "b": "Ma'lumot faqat autentifikatsiya qilingan qonuniy tizim subyektlariga ma'lum bo‘lishi xususiyati",
+                "c": "Ma'lumot autentifikatsiya qilingan qonuniy tizim subyektlari uchun ochiq bo‘lishi xususiyati",
+                "d": "Ma'lumot tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlarini ko‘rsatishi xususiyati",
+                "e": "Ma'lumot bir yoki bir nechta potentsial ma'lumot xavfsizligi buzg‘unchilari, ularning malakasi va texnik va moddiy vositalari haqida taxminlar to‘plamini taqdim etishi xususiyati"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "11. Ma'lumotlarning yaxlitligi nima?",
+            "options": {
+                "a": "Tizimning tasodifiy yoki qasddan buzilishlar yoki yo‘q qiluvchi ta'sirlar sharoitida ma'lumotning semantik ma'noda o‘zgarmasligi xususiyati",
+                "b": "Ma'lumot faqat autentifikatsiya qilingan qonuniy tizim subyektlariga ma'lum bo‘lishi xususiyati",
+                "c": "Ma'lumot autentifikatsiya qilingan qonuniy tizim subyektlari uchun ochiq bo‘lishi xususiyati",
+                "d": "Ma'lumot tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlarini ko‘rsatishi xususiyati",
+                "e": "Ma'lumot bir yoki bir nechta potentsial ma'lumot xavfsizligi buzg‘unchilari, ularning malakasi va texnik va moddiy vositalari haqida taxminlar to‘plamini taqdim etishi xususiyati"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "12. Ma'lumotlarning ochiqligi nima?",
+            "options": {
+                "a": "Ma'lumot tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlarini ko‘rsatishi xususiyati",
+                "b": "Tizimning tasodifiy yoki qasddan buzilishlar yoki yo‘q qiluvchi ta'sirlar sharoitida ma'lumotning semantik ma'noda o‘zgarmasligi xususiyati",
+                "c": "Ma'lumot autentifikatsiya qilingan qonuniy tizim subyektlari uchun ochiq bo‘lishi xususiyati",
+                "d": "Ma'lumot bir yoki bir nechta potentsial ma'lumot xavfsizligi buzg‘unchilari, ularning malakasi va texnik va moddiy vositalari haqida taxminlar to‘plamini taqdim etishi xususiyati",
+                "e": "Ma'lumot faqat autentifikatsiya qilingan qonuniy tizim subyektlariga ma'lum bo‘lishi xususiyati"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "13. Quyidagi tahdidlardan qaysi biri ma'lumotlar maxfiyligiga qarshi tahdidga tegishli?",
+            "options": {
+                "a": "Ma'lumotlar o‘g‘irlash",
+                "b": "Ma'lumotlar yo‘q qilish",
+                "c": "Ma'lumotlar o‘zgartirish"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "14. Quyidagi tahdidlardan qaysi biri ma'lumotlar ochiqligiga qarshi tahdidga tegishli?",
+            "options": {
+                "a": "Ma'lumotlar o‘g‘irlash",
+                "b": "Ma'lumotlar yo‘q qilish",
+                "c": "Ma'lumotlar o‘zgartirish"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "15. Quyidagi tahdidlardan qaysi biri ma'lumotlar yaxlitligiga qarshi tahdidga tegishli?",
+            "options": {
+                "a": "Ma'lumotlar o‘g‘irlash",
+                "b": "Ma'lumotlar yo‘q qilish",
+                "c": "Ma'lumotlar o‘zgartirish"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "16. Tahdid manbalarining qaysi tasnifi umumiy qabul qilingan?",
+            "options": {
+                "a": "Antropogen, texnogen, tabiiy",
+                "b": "Obyektiv, subyektiv, tasodifiy",
+                "c": "Mahalliy, global, kosmik"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "17. Himoyalangan obyektning zaifliklarining qaysi tasnifi umumiy qabul qilingan?",
+            "options": {
+                "a": "Obyektiv, subyektiv, tasodifiy",
+                "b": "Antropogen, texnogen, tabiiy",
+                "c": "Tashqi va ichki"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "18. Quyidagi tahdid manbalaridan qaysi biri antropogen tahdidlarga tegishli?",
+            "options": {
+                "a": "Elektr uzatish liniyalarining elektromagnit maydon ta'siri",
+                "b": "Rele kontaktlarining yopishib qolishi",
+                "c": "Suv toshqini",
+                "d": "Tornado",
+                "e": "Mast haydovchi"
+            },
+            "correct": "e"
+        },
+        {
+            "question": "19. Quyidagi tahdid manbalaridan qaysi biri texnogen tahdidlarga tegishli?",
+            "options": {
+                "a": "Samolyot dvigatelining ishdan chiqishi",
+                "b": "Tsunami",
+                "c": "Mast haydovchi",
+                "d": "Suv toshqini",
+                "e": "Tornado"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "20. Quyidagi tahdid manbalaridan qaysi biri tabiiy tahdidlarga tegishli?",
+            "options": {
+                "a": "Tsunami",
+                "b": "Samolyot dvigatelining ishdan chiqishi",
+                "c": "Mast haydovchi",
+                "d": "Elektr uzatish liniyalarining elektromagnit maydon ta'siri",
+                "e": "Rele kontaktlarining yopishib qolishi"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "21. Quyidagi tahdid manbalaridan qaysi biri tashqi antropogen tahdid hisoblanadi?",
+            "options": {
+                "a": "Telekommunikatsiya xizmatlari yetkazib beruvchilarining texnik xodimlari",
+                "b": "Aloqa vositalari",
+                "c": "Farrosh",
+                "d": "Transport",
+                "e": "Tornado"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "22. Quyidagi tahdid manbalaridan qaysi biri ichki antropogen tahdid hisoblanadi?",
+            "options": {
+                "a": "Aloqa vositalari",
+                "b": "Fors-major holatlari",
+                "c": "Jinoyatchi tuzilmalar",
+                "d": "Farrosh",
+                "e": "Obyektda ishlatiladigan sifatsiz ma'lumot ishlov berish dasturiy vositalari"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "23. Quyidagi tahdid manbalaridan qaysi biri tashqi texnogen tahdid hisoblanadi?",
+            "options": {
+                "a": "Transport",
+                "b": "Farrosh",
+                "c": "Tornado",
+                "d": "Jinoyatchi tuzilmalar",
+                "e": "Suv toshqini"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "24. Quyidagi tahdid manbalaridan qaysi biri ichki texnogen tahdid hisoblanadi?",
+            "options": {
+                "a": "Obyektda ishlatiladigan sifatsiz texnik ma'lumot ishlov berish vositalari",
+                "b": "Farrosh",
+                "c": "Tornado",
+                "d": "Jinoyatchi tuzilmalar",
+                "e": "Suv toshqini"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "25. Ma'lumot xavfsizligi buzg‘unchisi modeli nima?",
+            "options": {
+                "a": "Bir yoki bir nechta potentsial ma'lumot xavfsizligi buzg‘unchilari, ularning malakasi va texnik va moddiy vositalari haqida taxminlar to‘plami",
+                "b": "Obyektga bevosita yoki bilvosita zarar yetkazishi mumkin bo‘lgan mumkin bo‘lgan ta'sir",
+                "c": "Obyektdagi ma'lumot xavfsizligi buzilishiga olib keladigan ichki sabablar",
+                "d": "Xavfsizlik tahdidining potentsial antropogen, texnogen yoki tabiiy tashuvchilari",
+                "e": "Mavjud zaifliklar orqali tahdid manbai bilan o‘zaro ta'sir natijasida tahdidning amalga oshirilishi mumkin bo‘lgan oqibatlar"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "26. Quyidagi ma'lumot xavfsizligi buzg‘unchilari turlaridan qaysi biri ichki buzg‘unchilarga tegishli?",
+            "options": {
+                "a": "Ichki xavfsizlik xizmati xodimlari",
+                "b": "Raqobatchi tashkilotlar vakillari",
+                "c": "Idoraviy nazorat va boshqaruv organlari xodimlari"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "27. Quyidagi ma'lumot xavfsizligi buzg‘unchilari turlaridan qaysi biri ichki buzg‘unchilarga tegishli emas?",
+            "options": {
+                "a": "Raqobatchi tashkilotlar vakillari",
+                "b": "Ichki xavfsizlik xizmati xodimlari",
+                "c": "Farrosh"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "28. Quyidagi ma'lumot xavfsizligi buzg‘unchilari turlaridan qaysi biri tashqi buzg‘unchilarga tegishli?",
+            "options": {
+                "a": "Idoraviy nazorat va boshqaruv organlari xodimlari",
+                "b": "Ichki xavfsizlik xizmati xodimlari",
+                "c": "Farrosh"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "29. Quyidagi ma'lumot xavfsizligi buzg‘unchilari turlaridan qaysi biri tashqi buzg‘unchilarga tegishli emas?",
+            "options": {
+                "a": "Ma'lumot tizimining foydalanuvchilari va operatorlari",
+                "b": "Raqobatchi tashkilotlar vakillari",
+                "c": "Taklif qilingan mehmonlar",
+                "d": "Himoyalangan hududdan tashqaridagi kuzatuvchilar",
+                "e": "Kirish nazorati rejimini buzuvchilar"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "30. KDX triadasini tashkil etuvchi uchta tushuncha qaysilar?",
+            "options": {
+                "a": "Maxfiylik, ochiqlik va yaxlitlik",
+                "b": "Tinchlik, mehnat, may",
+                "c": "Kecha, bugun, ertaga",
+                "d": "Autentiklik, egalik va foydalilik"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "31. KDX triadasini Parker geksadasiga to‘ldiruvchi uchta tushuncha qaysilar?",
+            "options": {
+                "a": "Autentiklik, egalik va foydalilik",
+                "b": "Maxfiylik, ochiqlik va yaxlitlik",
+                "c": "Tinchlik, mehnat, may",
+                "d": "Yaratish, tahrirlash, o‘chirish"
+            },
+            "correct": "a"
+        }
+    ],
+    "Dasturiy ta'minotni himoya qilish usullari": [
+        {
+            "question": "32. Quyidagi dasturiy ta'minotni himoya qilish usullaridan qaysi biri o‘z-o‘zini himoya qilish usullariga tegishli?",
+            "options": {
+                "a": "Xizmat ko‘rsatishni tashkil etish",
+                "b": "Parollardan foydalanish",
+                "c": "Maxsus apparaturadan foydalanish"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "33. Quyidagi dasturiy ta'minotni himoya qilish usullaridan qaysi biri hisoblash tizimi tarkibidagi himoya vositalaridan foydalanish usullariga tegishli?",
+            "options": {
+                "a": "Xizmat ko‘rsatishni tashkil etish",
+                "b": "Parollardan foydalanish",
+                "c": "Maxsus apparaturadan foydalanish"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "34. Quyidagi dasturiy ta'minotni himoya qilish usullaridan qaysi biri ma'lumot so‘rovi bilan himoya usullariga tegishli?",
+            "options": {
+                "a": "Xizmat ko‘rsatishni tashkil etish",
+                "b": "Parollardan foydalanish",
+                "c": "Maxsus apparaturadan foydalanish"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "35. Ma'lumotlarni himoya qilish tizimlarida НСД qisqartmasi nimani anglatadi?",
+            "options": {
+                "a": "Ruxsatsiz kirish",
+                "b": "Ekranlash",
+                "c": "Ruxsatsiz nusxa olish",
+                "d": "Fayllarni shifrlash"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "36. Ma'lumotlarni himoya qilish tizimlarida НСК qisqartmasi nimani anglatadi?",
+            "options": {
+                "a": "Ruxsatsiz kirish",
+                "b": "Ekranlash",
+                "c": "Ruxsatsiz nusxa olish",
+                "d": "Fayllarni shifrlash"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "37. Quyidagilardan qaysi biri apparatga asoslangan ma'lumotlarni himoya qilish usullariga tegishli?",
+            "options": {
+                "a": "Kirish nazorati rejimini tashkil etish",
+                "b": "Ekranlash",
+                "d": "Fayllarni shifrlash"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "38. Quyidagilardan qaysi biri dasturiy ma'lumotlarni himoya qilish usullariga tegishli?",
+            "options": {
+                "a": "Ekranlash",
+                "b": "Fayllarni shifrlash",
+                "c": "Oq shovqin generatorlari yordamida akustik niqoblash vositalari",
+                "d": "Kirish nazorati rejimini tashkil etish",
+                "e": "Shaxsiy kompyuter korpusini ochilishdan himoya qilish"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "39. Quyidagilardan qaysi biri tashkiliy ma'lumotlarni himoya qilish usullariga tegishli?",
+            "options": {
+                "a": "Ekranlash",
+                "b": "Fayllarni shifrlash",
+                "c": "Oq shovqin generatorlari yordamida akustik niqoblash vositalari",
+                "d": "Kirish nazorati rejimini tashkil etish",
+                "e": "Shaxsiy kompyuter korpusini ochilishdan himoya qilish"
+            },
+            "correct": "d"
+        }
+    ],
+    "Dasturiy ta'minot va ma'lumotlar bazasini himoya qilishning kriptografik usullari": [
+        {
+            "question": "40. Quyidagilardan qaysi biri ma'lumotlarning kriptografik o‘zgartirish usuli hisoblanadi?",
+            "options": {
+                "a": "Steganografiya",
+                "b": "Stenografiya",
+                "c": "Chop etish",
+                "d": "Boshqa tilga tarjima qilish"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "41. Quyidagilardan qaysi biri ma'lumotlarning kriptografik o‘zgartirish usuli emas?",
+            "options": {
+                "a": "Shifrlash",
+                "b": "Kodlash",
+                "c": "Siqish",
+                "d": "Nusxa olish",
+                "e": "Steganografiya"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "42. Quyidagi algoritmlardan qaysi biri simmetrik kriptotizimlarga tegishli?",
+            "options": {
+                "a": "DES",
+                "b": "RSA",
+                "c": "ElGamal"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "43. Quyidagi algoritmlardan qaysi biri assimetrik kriptotizimlarga tegishli?",
+            "options": {
+                "a": "Diffie-Hellman",
+                "b": "ElGamal",
+                "c": "DES",
+                "d": "MD5",
+                "e": "GOST 28147-89"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "44. Quyidagi algoritmlardan qaysi biri raqamli imzo yaratishda ishlatiladi?",
+            "options": {
+                "a": "RSA",
+                "b": "DES",
+                "c": "GOST 28147-89"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "45. Quyidagi algoritmlardan qaysi biri klassik simmetrik kriptotizimlarga tegishli emas?",
+            "options": {
+                "a": "GOST 28147-89",
+                "b": "Sezar shifri",
+                "c": "Alberti diski yordamida shifrlash",
+                "d": "Vigenère jadvali yordamida shifrlash"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "46. Skitala yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Polialfavitik shifr",
+                "b": "Monoalfavitik shifr",
+                "c": "Elektromexanik shifrlash mashinasi yordamida",
+                "d": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "e": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "47. Sezar shifri yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Elektromexanik shifrlash mashinasi yordamida",
+                "b": "Monoalfavitik shifr",
+                "c": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "d": "Polialfavitik shifr",
+                "e": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "48. Alberti diski yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Polialfavitik shifr",
+                "b": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "c": "Elektromexanik shifrlash mashinasi yordamida",
+                "d": "Monoalfavitik shifr",
+                "e": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "49. Vigenère jadvali yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Monoalfavitik shifr",
+                "b": "Polialfavitik shifr",
+                "c": "Elektromexanik shifrlash mashinasi yordamida",
+                "d": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "e": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida"
+            },
+            "correct": "b"
+        },
+        {
+            "question": "50. Enigma mashinasi yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Elektromexanik shifrlash mashinasi yordamida",
+                "b": "Monoalfavitik shifr",
+                "c": "Polialfavitik shifr",
+                "d": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "e": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "51. Triple DES yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "b": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "c": "Monoalfavitik shifr",
+                "d": "Polialfavitik shifr",
+                "e": "Elektromexanik shifrlash mashinasi yordamida"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "52. AES yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Maxfiy yoki yopiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "b": "Ochiq kalitli dasturiy yoki apparat matematik shifri yordamida",
+                "c": "Monoalfavitik shifr",
+                "d": "Polialfavitik shifr",
+                "e": "Elektromexanik shifrlash mashinasi yordamida"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "53. RSA yordamida shifrlash qanday shifr turiga kiradi?",
+            "options": {
+                "a": "Kalitlarni tarqatish algoritmlari",
+                "b": "Hash funksiyalari",
+                "c": "Yopiq kalitli kriptotizimlar",
+                "d": "Asimmetrik kriptotizimlar",
+                "e": "Simmetrik kriptotizimlar"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "54. Sezar shifri qaysi shifrlash algoritmlari sinfiga kiradi?",
+            "options": {
+                "a": "Simmetrik kriptotizimlar",
+                "b": "Ochiq kalitli kriptotizimlar",
+                "c": "Hash funksiyalari",
+                "d": "Asimmetrik kriptotizimlar",
+                "e": "Kalitlarni tarqatish algoritmlari"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "55. Vigenère jadvali yordamida shifrlash qaysi shifrlash algoritmlari sinfiga kiradi?",
+            "options": {
+                "a": "Simmetrik kriptotizimlar",
+                "b": "Ochiq kalitli kriptotizimlar",
+                "c": "Hash funksiyalari",
+                "d": "Asimmetrik kriptotizimlar",
+                "e": "Kalitlarni tarqatish algoritmlari"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "56. DES algoritmi yordamida shifrlash qaysi shifrlash algoritmlari sinfiga kiradi?",
+            "options": {
+                "a": "Ochiq kalitli kriptotizimlar",
+                "b": "Hash funksiyalari",
+                "c": "Asimmetrik kriptotizimlar",
+                "d": "Yopiq kalitli kriptotizimlar",
+                "e": "Kalitlarni tarqatish algoritmlari"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "57. RSA algoritmi yordamida shifrlash qaysi shifrlash algoritmlari sinfiga kiradi?",
+            "options": {
+                "a": "Asimmetrik kriptotizimlar",
+                "b": "Yopiq kalitli kriptotizimlar",
+                "c": "Kalitlarni tarqatish algoritmlari",
+                "d": "Simmetrik kriptotizimlar",
+                "e": "Hash funksiyalari"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "58. ElGamal algoritmi nima uchun ishlatiladi?",
+            "options": {
+                "a": "Raqamli imzo yaratish uchun",
+                "b": "Xavfsiz kalit uzatish uchun",
+                "c": "Simmetrik shifrlash uchun"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "59. Diffie-Hellman algoritmi nima uchun ishlatiladi?",
+            "options": {
+                "a": "Xavfsiz kalit uzatish uchun",
+                "b": "Raqamli imzo yaratish uchun",
+                "c": "Simmetrik shifrlash uchun"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "60. DES algoritmi necha shifrlash siklini o‘z ichiga oladi?",
+            "options": {
+                "a": "16",
+                "b": "32",
+                "c": "64",
+                "d": "2",
+                "e": "8"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "61. DES algoritmining kalit uzunligi qancha?",
+            "options": {
+                "a": "64 bit",
+                "b": "128 bit",
+                "c": "256 bit",
+                "d": "1024 bit",
+                "e": "32 bit"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "62. DES algoritmi tomonidan shifrlanadigan ma'lumot blokining uzunligi qancha?",
+            "options": {
+                "a": "64 bit",
+                "b": "128 bit",
+                "c": "256 bit",
+                "d": "1024 bit",
+                "e": "32 bit"
+            },
+            "correct": "a"
+        }
+    ],
+    "Dasturiy ta'minot va ma'lumotlar bazasini himoya qilish uchun autentifikatsiya vositalari": [
+        {
+            "question": "63. Quyidagi autentifikatsiya vositalaridan qaysi biri subyektga oldindan berilgan shartli atributlarga (ma'lumotlarga) asoslangan vositalarga tegishli?",
+            "options": {
+                "a": "Parolga asoslangan vositalar",
+                "b": "Aqlli karta",
+                "c": "Barmoq izi orqali",
+                "d": "Ko‘z pardasi orqali",
+                "e": "USB kaliti yordamida"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "64. Quyidagi autentifikatsiya vositalaridan qaysi biri jismoniy kalitga o‘xshash tarzda ishlaydigan fizik vositalarga asoslangan vositalarga tegishli?",
+            "options": {
+                "a": "Aqlli karta",
+                "b": "Parolga asoslangan vositalar",
+                "c": "Barmoq izi orqali",
+                "d": "Ko‘z pardasi orqali",
+                "e": "Matn terish uslubi orqali"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "65. Quyidagi autentifikatsiya vositalaridan qaysi biri subyektning individual xususiyatlariga, ularning fizik ma'lumotlariga asoslangan vositalarga tegishli, bu ularni boshqalardan farqlash imkonini beradi?",
+            "options": {
+                "a": "Barmoq izi orqali",
+                "b": "Aqlli karta",
+                "c": "Parolga asoslangan vositalar",
+                "d": "USB kaliti yordamida",
+                "e": "PIN kod"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "66. Quyidagi autentifikatsiya vositalaridan qaysi biri biometrik vositalarga tegishli?",
+            "options": {
+                "a": "Ko‘z pardasi orqali",
+                "b": "Aqlli karta",
+                "c": "Parolga asoslangan vositalar",
+                "d": "USB kaliti yordamida",
+                "e": "PIN kod"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "67. Quyidagi autentifikatsiya vositalaridan qaysi biri biometrik vositalarga tegishli emas?",
+            "options": {
+                "a": "USB kaliti yordamida",
+                "b": "Ovoz orqali",
+                "c": "Barmoq izi orqali",
+                "d": "Ko‘z pardasi orqali",
+                "e": "Matn terish uslubi orqali"
+            },
+            "correct": "a"
+        }
+    ],
+    "Kirishni boshqarish qoidalari": [
+        {
+            "question": "68. Quyidagi tavsif asosida kirishni boshqarish printsipini aniqlang: Har bir himoyalangan elementga noyob shaxsiy yorliq beriladi, shundan so‘ng ushbu elementga faqat administrator yoki element egasi tomonidan berilishi mumkin bo‘lgan element yorlig‘ini o‘z so‘rovida taqdim etgan foydalanuvchiga kirish huquqi beriladi.",
+            "options": {
+                "a": "Majburiy kirishni boshqarish",
+                "b": "Ixtiyoriy kirishni boshqarish",
+                "c": "Rolga asoslangan kirishni boshqarish",
+                "d": "Kirishni boshqarish ro‘yxatlariga asoslangan kirishni boshqarish"
+            },
+            "correct": "a"
+        },
+        {
+            "question": "69. Quyidagi tavsif asosida kirishni boshqarish printsipini aniqlang: Har bir himoyalangan ma'lumot elementi uchun ushbu elementga kirish huquqiga ega bo‘lgan barcha foydalanuvchilar ro‘yxati tuziladi.",
+            "options": {
+                "a": "Majburiy kirishni boshqarish",
+                "b": "Ixtiyoriy kirishni boshqarish",
+                "c": "Rolga asoslangan kirishni boshqarish",
+                "d": "Kirishni boshqarish ro‘yxatlariga asoslangan kirishni boshqarish"
+            },
+            "correct": "d"
+        },
+        {
+            "question": "70. Quyidagi tavsif asosida kirishni boshqarish printsipini aniqlang: Tashkilotda mavjud bo‘lgan turli lavozimlar ro‘yxatiga mos kelishi kerak bo‘lgan 'lavozim' va 'ish vazifalari doirasi' kabi tushunchalar qo‘llaniladi.",
+            "options": {
+                "a": "Majburiy kirishni boshqarish",
+                "b": "Ixtiyoriy kirishni boshqarish",
+                "c": "Rolga asoslangan kirishni boshqarish",
+                "d": "Kirishni boshqarish ro‘yxatlariga asoslangan kirishni boshqarish"
+            },
+            "correct": "c"
+        },
+        {
+            "question": "71. Quyidagi tavsif asosida kirishni boshqarish printsipini aniqlang: Jadval qatorlarida ro‘yxatdan o‘tgan foydalanuvchilarning identifikatorlari, ustunlarda himoyalangan ma'lumot elementlarining identifikatorlari, hujayralarda esa ruxsatlar mavjud.",
+            "options": {
+                "a": "Majburiy kirishni boshqarish",
+                "b": "Ixtiyoriy kirishni boshqarish",
+                "c": "Rolga asoslangan kirishni boshqarish",
+                "d": "Kirishni boshqarish ro‘yxatlariga asoslangan kirishni boshqarish"
+            },
+            "correct": "b"
+        }
+    ],
+    "Tarmoq xavfsizligi": [
+        {
+            "question": "72. Trafikni filtrlash tushunchasini aniqlang.",
+            "options": {
+                "a": "Routerlar va xavfsizlik devorlari tomonidan IP paketlarini qayta ishlash, bu ba'zi paketlarning tashlab yuborilishi yoki marshrutining o‘zgarishiga olib keladi.",
+                "b": "Kompyuter tarmog‘ining bir qismini boshqa qismidan ma'lumotlarni himoya qilishni ta'minlaydigan, ular o‘rtasida o‘tadigan trafikni tahlil qilish va filtrlash orqali ishlaydigan dasturiy va apparat vositalar to‘plami.",
+                "c": "Mijozlar ichki (himoyalangan) tarmoqqa, serverlar esa tashqi (potentsial xavfli) tarmoqqa tegishli deb hisoblangan holda, tarqatilgan tarmoq ilovalarining mijoz va server qismlari o‘rtasida vositachi sifatida ishlaydigan maxsus ilova turi.",
+                "d": "Xizmat ko‘rsatish sifati shartnomalari, tarmoqni rejalashtirish va texnik nosozliklar, tahdidlar va zararli harakatlar kabi salbiy hodisalarni oldini olish uchun maxsus trafik parametrlarni doimiy instrumental avtomatlashtirilgan monitoring jarayoni.",
+                "e": "Tarmoq trafigini va tizim subyektlari faoliyatini doimiy ravishda kuzatib, hujumlarni oldini olish, aniqlash va qayd etish uchun mo‘ljallangan dasturiy yoki apparat vositasi."
+            },
+            "correct": "a"
+        },
+        {
+            "question": "73. Xavfsizlik devori tushunchasini aniqlang.",
+            "options": {
+                "a": "Routerlar va xavfsizlik devorlari tomonidan IP paketlarini qayta ishlash, bu ba'zi paketlarning tashlab yuborilishi yoki marshrutining o‘zgarishiga olib keladi.",
+                "b": "Kompyuter tarmog‘ining bir qismini boshqa qismidan ma'lumotlarni himoya qilishni ta'minlaydigan, ular o‘rtasida o‘tadigan trafikni tahlil qilish va filtrlash orqali ishlaydigan dasturiy va apparat vositalar to‘plami.",
+                "c": "Mijozlar ichki (himoyalangan) tarmoqqa, serverlar esa tashqi (potentsial xavfli) tarmoqqa tegishli deb hisoblangan holda, tarqatilgan tarmoq ilovalarining mijoz va server qismlari o‘rtasida vositachi sifatida ishlaydigan maxsus ilova turi.",
+                "d": "Xizmat ko‘rsatish sifati shartnomalari, tarmoqni rejalashtirish va texnik nosozliklar, tahdidlar va zararli harakatlar kabi salbiy hodisalarni oldini olish uchun maxsus trafik parametrlarni doimiy instrumental avtomatlashtirilgan monitoring jarayoni.",
+                "e": "Tarmoq trafigini va tizim subyektlari faoliyatini doimiy ravishda kuzatib, hujumlarni oldini olish, aniqlash va qayd etish uchun mo‘ljallangan dasturiy yoki apparat vositasi."
+            },
+            "correct": "b"
+        },
+        {
+            "question": "74. Proksi-server tushunchasini aniqlang.",
+            "options": {
+                "a": "Routerlar va xavfsizlik devorlari tomonidan IP paketlarini qayta ishlash, bu ba'zi paketlarning tashlab yuborilishi yoki marshrutining o‘zgarishiga olib keladi.",
+                "b": "Kompyuter tarmog‘ining bir qismini boshqa qismidan ma'lumotlarni himoya qilishni ta'minlaydigan, ular o‘rtasida o‘tadigan trafikni tahlil qilish va filtrlash orqali ishlaydigan dasturiy va apparat vositalar to‘plami.",
+                "c": "Mijozlar ichki (himoyalangan) tarmoqqa, serverlar esa tashqi (potentsial xavfli) tarmoqqa tegishli deb hisoblangan holda, tarqatilgan tarmoq ilovalarining mijoz va server qismlari o‘rtasida vositachi sifatida ishlaydigan maxsus ilova turi.",
+                "d": "Xizmat ko‘rsatish sifati shartnomalari, tarmoqni rejalashtirish va texnik nosozliklar, tahdidlar va zararli harakatlar kabi salbiy hodisalarni oldini olish uchun maxsus trafik parametrlarni doimiy instrumental avtomatlashtirilgan monitoring jarayoni.",
+                "e": "Tarmoq trafigini va tizim subyektlari faoliyatini doimiy ravishda kuzatib, hujumlarni oldini olish, aniqlash va qayd etish uchun mo‘ljallangan dasturiy yoki apparat vositasi."
+            },
+            "correct": "c"
+        },
+        {
+            "question": "75. Tarmoq trafigini monitoring qilish tushunchasini aniqlang.",
+            "options": {
+                "a": "Routerlar va xavfsizlik devorlari tomonidan IP paketlarini qayta ishlash, bu ba'zi paketlarning tashlab yuborilishi yoki marshrutining o‘zgarishiga olib keladi.",
+                "b": "Kompyuter tarmog‘ining bir qismini boshqa qismidan ma'lumotlarni himoya qilishni ta'minlaydigan, ular o‘rtasida o‘tadigan trafikni tahlil qilish va filtrlash orqali ishlaydigan dasturiy va apparat vositalar to‘plami.",
+                "c": "Mijozlar ichki (himoyalangan) tarmoqqa, serverlar esa tashqi (potentsial xavfli) tarmoqqa tegishli deb hisoblangan holda, tarqatilgan tarmoq ilovalarining mijoz va server qismlari o‘rtasida vositachi sifatida ishlaydigan maxsus ilova turi.",
+                "d": "Xizmat ko‘rsatish sifati shartnomalari, tarmoqni rejalashtirish va texnik nosozliklar, tahdidlar va zararli harakatlar kabi salbiy hodisalarni oldini olish uchun maxsus trafik parametrlarni doimiy instrumental avtomatlashtirilgan monitoring jarayoni.",
+                "e": "Tarmoq trafigini va tizim subyektlari faoliyatini doimiy ravishda kuzatib, hujumlarni oldini olish, aniqlash va qayd etish uchun mo‘ljallangan dasturiy yoki apparat vositasi."
+            },
+            "correct": "d"
+        },
+        {
+            "question": "76. Kirishni aniqlash tizimi tushunchasini aniqlang.",
+            "options": {
+                "a": "Routerlar va xavfsizlik devorlari tomonidan IP paketlarini qayta ishlash, bu ba'zi paketlarning tashlab yuborilishi yoki marshrutining o‘zgarishiga olib keladi.",
+                "b": "Kompyuter tarmog‘ining bir qismini boshqa qismidan ma'lumotlarni himoya qilishni ta'minlaydigan, ular o‘rtasida o‘tadigan trafikni tahlil qilish va filtrlash orqali ishlaydigan dasturiy va apparat vositalar to‘plami.",
+                "c": "Mijozlar ichki (himoyalangan) tarmoqqa, serverlar esa tashqi (potentsial xavfli) tarmoqqa tegishli deb hisoblangan holda, tarqatilgan tarmoq ilovalarining mijoz va server qismlari o‘rtasida vositachi sifatida ishlaydigan maxsus ilova turi.",
+                "d": "Xizmat ko‘rsatish sifati shartnomalari, tarmoqni rejalashtirish va texnik nosozliklar, tahdidlar va zararli harakatlar kabi salbiy hodisalarni oldini olish uchun maxsus trafik parametrlarni doimiy instrumental avtomatlashtirilgan monitoring jarayoni.",
+                "e": "Tarmoq trafigini va tizim subyektlari faoliyatini doimiy ravishda kuzatib, hujumlarni oldini olish, aniqlash va qayd etish uchun mo‘ljallangan dasturiy yoki apparat vositasi."
+            },
+            "correct": "e"
+        },
+        {
+            "question": "77. Troyan dasturi tushunchasini aniqlang.",
+            "options": {
+                "a": "Boshqa fayllarga kiritilishi mumkin bo‘lgan zararli dasturiy fragment.",
+                "b": "Foydali ilova sifatida yashirinib, tizimga zarar keltiradigan zararli dastur.",
+                "c": "Masofadan boshqarish markazi buyruqlari asosida avtomatlashtirilgan harakatlarni amalga oshiradigan dastur tomonidan infiltratsiya qilingan tarmoq qurilmalari to‘plami.",
+                "d": "Foydalanuvchi ishtirokisiz bir kompyuterdan boshqasiga o‘tib, mahalliy tarmoq va global ulanishlar orqali o‘z nusxalarini mustaqil ravishda tarqatadigan dastur.",
+                "e": "Muayyan shartlar ostida hujjatsiz funksiyalarni ishga tushiradigan, ma'lumotga ruxsatsiz ta'sirlarni amalga oshirish imkonini beruvchi dasturiy ta'minotga kiritilgan obyekt."
+            },
+            "correct": "b"
+        },
+        {
+            "question": "78. Tarmoq qurti tushunchasini aniqlang.",
+            "options": {
+                "a": "Foydalanuvchi ishtirokisiz bir kompyuterdan boshqasiga o‘tib, mahalliy tarmoq va global ulanishlar orqali o‘z nusxalarini mustaqil ravishda tarqatadigan dastur.",
+                "b": "Boshqa fayllarga kiritilishi mumkin bo‘lgan zararli dasturiy fragment.",
+                "c": "Muayyan shartlar ostida hujjatsiz funksiyalarni ishga tushiradigan, ma'lumotga ruxsatsiz ta'sirlarni amalga oshirish imkonini beruvchi dasturiy ta'minotga kiritilgan obyekt.",
+                "d": "Masofadan boshqarish markazi buyruqlari asosida avtomatlashtirilgan harakatlarni amalga oshiradigan dastur tomonidan infiltratsiya qilingan tarmoq qurilmalari to‘plami."
+            },
+            "correct": "a"
+        },
+        {
+            "question": "79. Kompyuter virusi tushunchasini aniqlang.",
+            "options": {
+                "a": "Foydalanuvchi ishtirokisiz bir kompyuterdan boshqasiga o‘tib, mahalliy tarmoq va global ulanishlar orqali o‘z nusxalarini mustaqil ravishda tarqatadigan dastur.",
+                "b": "Boshqa fayllarga kiritilishi mumkin bo‘lgan zararli dasturiy fragment.",
+                "c": "Muayyan shartlar ostida hujjatsiz funksiyalarni ishga tushiradigan, ma'lumotga ruxsatsiz ta'sirlarni amalga oshirish imkonini beruvchi dasturiy ta'minotga kiritilgan obyekt.",
+                "d": "Masofadan boshqarish markazi buyruqlari asosida avtomatlashtirilgan harakatlarni amalga oshiradigan dastur tomonidan infiltratsiya qilingan tarmoq qurilmalari to‘plami."
+            },
+            "correct": "b"
+        },
+        {
+            "question": "80. Dasturiy ta'minotdagi orqa eshik tushunchasini aniqlang.",
+            "options": {
+                "a": "Foydalanuvchi ishtirokisiz bir kompyuterdan boshqasiga o‘tib, mahalliy tarmoq va global ulanishlar orqali o‘z nusxalarini mustaqil ravishda tarqatadigan dastur.",
+                "b": "Boshqa fayllarga kiritilishi mumkin bo‘lgan zararli dasturiy fragment.",
+                "c": "Muayyan shartlar ostida hujjatsiz funksiyalarni ishga tushiradigan, ma'lumotga ruxsatsiz ta'sirlarni amalga oshirish imkonini beruvchi dasturiy ta'minotga kiritilgan obyekt.",
+                "d": "Masofadan boshqarish markazi buyruqlari asosida avtomatlashtirilgan harakatlarni amalga oshiradigan dastur tomonidan infiltratsiya qilingan tarmoq qurilmalari to‘plami."
+            },
+            "correct": "c"
+        },
+        {
+            "question": "81. Botnet tushunchasini aniqlang.",
+            "options": {
+                "a": "Foydalanuvchi ishtirokisiz bir kompyuterdan boshqasiga o‘tib, mahalliy tarmoq va global ulanishlar orqali o‘z nusxalarini mustaqil ravishda tarqatadigan dastur.",
+                "b": "Boshqa fayllarga kiritilishi mumkin bo‘lgan zararli dasturiy fragment.",
+                "c": "Muayyan shartlar ostida hujjatsiz funksiyalarni ishga tushiradigan, ma'lumotga ruxsatsiz ta'sirlarni amalga oshirish imkonini beruvchi dasturiy ta'minotga kiritilgan obyekt.",
+                "d": "Masofadan boshqarish markazi buyruqlari asosida avtomatlashtirilgan harakatlarni amalga oshiradigan dastur tomonidan infiltratsiya qilingan tarmoq qurilmalari to‘plami."
+            },
+            "correct": "d"
+        }
+    ]
+}
+
 # User progress dictionary
 user_progress = {}
 
@@ -1753,6 +2613,17 @@ messages = {
         "quiz_completed": "Викторина завершена. Правильных ответов: {score} из {total}",
         "start_quiz_prompt": "Пожалуйста, начните викторину через '📘 Quiz'.",
         "restart_quiz": "Пожалуйста, начните викторину заново через '📘 Quiz'."
+    },
+    "uz": {
+        "welcome": "Xush kelibsiz! Iltimos, tilni tanlang:",
+        "choose_action": "Harakatni tanlang:",
+        "choose_topic": "Mavzuni tanlang:",
+        "start_quiz": "Viktorinani boshlash",
+        "correct": "✅ To‘g‘ri!",
+        "incorrect": "❌ Noto‘g‘ri! To‘g‘ri javob: {correct}",
+        "quiz_completed": "Viktorina yakunlandi. To‘g‘ri javoblar: {score}/{total}",
+        "start_quiz_prompt": "Iltimos, viktorinani '📘 Viktorina' orqali boshlang.",
+        "restart_quiz": "Iltimos, viktorinani yana '📘 Viktorina' orqali boshlang."
     }
 }
 
@@ -1761,43 +2632,48 @@ messages = {
 def start_handler(message):
     user_id = message.from_user.id
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(types.KeyboardButton("English"), types.KeyboardButton("Русский"))
+    markup.add(types.KeyboardButton("English"), types.KeyboardButton("Русский"), types.KeyboardButton("O‘zbek"))
     bot.reply_to(message, messages["en"]["welcome"], reply_markup=markup)
     user_language[user_id] = None  # Reset language selection
 
 # Language selection
-@bot.message_handler(func=lambda message: message.text in ["English", "Русский"])
+@bot.message_handler(func=lambda message: message.text in ["English", "Русский", "O‘zbek"])
 def language_handler(message):
     user_id = message.from_user.id
-    lang = "en" if message.text == "English" else "ru"
+    if message.text == "English":
+        lang = "en"
+    elif message.text == "Русский":
+        lang = "ru"
+    else:
+        lang = "uz"
     user_language[user_id] = lang
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(types.KeyboardButton("📘 Quiz"))
+    markup.add(types.KeyboardButton("📘 Viktorina" if lang == "uz" else "📘 Quiz"))
     bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
 
 # Quiz selection
-@bot.message_handler(func=lambda message: message.text == "📘 Quiz")
+@bot.message_handler(func=lambda message: message.text in ["📘 Quiz", "📘 Viktorina"])
 def quiz_handler(message):
     user_id = message.from_user.id
     if user_id not in user_language or user_language[user_id] is None:
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    topics = topics_eng if lang == "en" else topics_ru
+    topics = topics_uz if lang == "uz" else topics_ru
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     for topic in topics.keys():
         markup.add(types.KeyboardButton(topic))
     bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
 
 # Start quiz for selected topic
-@bot.message_handler(func=lambda message: message.text in topics_eng or message.text in topics_ru)
+@bot.message_handler(func=lambda message: message.text in topics_ru or message.text in topics_uz)
 def start_quiz(message):
     user_id = message.from_user.id
     if user_id not in user_language or user_language[user_id] is None:
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    topics = topics_eng if lang == "en" else topics_ru
+    topics = topics_uz if lang == "uz" else topics_ru
     topic = message.text
     if topic not in topics:
         bot.reply_to(message, messages[lang]["choose_topic"])
@@ -1811,7 +2687,6 @@ def start_quiz(message):
     send_question(message.chat.id, user_id)
 
 # Send question to user
-# Send question to user
 def send_question(chat_id, user_id):
     if user_id not in user_progress:
         lang = user_language.get(user_id, "en")
@@ -1819,7 +2694,7 @@ def send_question(chat_id, user_id):
         return
 
     lang = user_progress[user_id]["language"]
-    topics = topics_eng if lang == "en" else topics_ru
+    topics = topics_uz if lang == "uz" else topics_ru
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
     questions = topics[topic]
@@ -1836,11 +2711,11 @@ def send_question(chat_id, user_id):
         return
 
     question = questions[index]
-    # Формируем текст сообщения с вопросом и полными вариантами ответа
+    # Formiramiz xabarni savol va to‘liq javob variantlari bilan
     options_text = "\n".join([f"{key}) {val}" for key, val in question["options"].items()])
     message_text = f"{question['question']}\n\n{options_text}"
 
-    # Создаем кнопки только с метками (a, b, c и т.д.)
+    # Faqat harfli tugmalar (a, b, c va h.k.) yaratamiz
     markup = types.InlineKeyboardMarkup()
     for key in question["options"].keys():
         markup.add(types.InlineKeyboardButton(f"{key}", callback_data=key))
@@ -1859,7 +2734,7 @@ def answer_handler(call):
         return
 
     lang = user_progress[user_id]["language"]
-    topics = topics_eng if lang == "en" else topics_ru
+    topics = topics_uz if lang == "uz" else topics_ru
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
     question = topics[topic][index]
@@ -1876,8 +2751,6 @@ def answer_handler(call):
 
     user_progress[user_id]["index"] += 1
     send_question(call.message.chat.id, user_id)
-
-# (Остальные части кода остаются без изменений)
 
 # Start the bot
 if __name__ == '__main__':

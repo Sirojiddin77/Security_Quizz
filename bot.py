@@ -2912,6 +2912,8 @@ topics_uz = {
 # User progress dictionary
 user_progress = {}
 
+user_selected_topic ={}
+
 # Language selection dictionary
 user_language = {}
 
@@ -2952,17 +2954,42 @@ messages = {
     }
 }
 
+#to show language very first meny
+def show_language_menu(chat_id):
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(
+        types.KeyboardButton("O‘zbek"),
+        types.KeyboardButton("Русский"),
+        types.KeyboardButton("English")
+    )
+    bot.send_message(chat_id, "🇺🇿 Tilni tanlang / 🇷🇺 Выберите язык / 🇬🇧 Choose a language:", reply_markup=markup)
+
+
+def get_main_menu_markup(lang):
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(
+        types.KeyboardButton(
+        "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else  "📘 Quiz"),
+        types.KeyboardButton(
+        "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
+        types.KeyboardButton(
+        "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
+    )
+    # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    # quiz_btn = "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else "📘 Quiz"
+    # theory_btn = "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"
+    # back_btn = "Ortga" if lang == "uz" else "Назад" if lang == "ru" else "Back"
+    # markup.add(types.KeyboardButton(quiz_btn), types.KeyboardButton(theory_btn), types.KeyboardButton(back_btn))
+    return markup
+
+
 # Main menu
 @bot.message_handler(commands=['start'])
 def start_handler(message):
     user_id = message.from_user.id
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(
-        types.KeyboardButton("English"),
-        types.KeyboardButton("Русский"),
-        types.KeyboardButton("O‘zbek"))
-    bot.reply_to(message, messages["en"]["welcome"], reply_markup=markup)
+    show_language_menu(message.chat.id)
     user_language[user_id] = None  # Reset language selection
+
 
 # Language selection
 @bot.message_handler(func=lambda message: message.text in ["English", "Русский", "O‘zbek"])
@@ -2975,16 +3002,16 @@ def language_handler(message):
     else:
         lang = "uz"
     user_language[user_id] = lang
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    # markup.add(types.KeyboardButton("📘 Viktorina" if lang == "uz" else "📘 Quiz"))
-    markup.add(
-        types.KeyboardButton(
-        "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else  "📘 Quiz"),
-        types.KeyboardButton(
-        "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
-        types.KeyboardButton(
-        "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
-    )
+    markup = get_main_menu_markup(lang)
+    # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    # markup.add(
+    #     types.KeyboardButton(
+    #     "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else  "📘 Quiz"),
+    #     types.KeyboardButton(
+    #     "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
+    #     types.KeyboardButton(
+    #     "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
+    # )
     # Add the "Back to Language Selection" button
     bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
 
@@ -2996,7 +3023,6 @@ def quiz_handler(message):
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    # topics = topics_uz if lang == "uz" else topics_ru
     topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     for topic in topics.keys():
@@ -3011,13 +3037,42 @@ def theory_handler(message):
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    # topics = topics_uz if lang == "uz" else topics_ru
     topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     for topic in topics.keys():
         markup.add(types.KeyboardButton(topic))
-        bot.set_state(user_id, "awaiting_theory_topic", message.chat.id)
+
+    back_text = "Ortga harakatga" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    markup.add(types.KeyboardButton(back_text))
+
+    bot.set_state(user_id, "awaiting_theory_topic", message.chat.id)
     bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
+
+
+#back button
+@bot.message_handler(func=lambda message: message.text in ["Ortga", "Назад", "Back"])
+def back_to_language_selection(message):
+    show_language_menu(message.chat.id)
+
+
+@bot.message_handler(state="awaiting_theory_topic")
+def theory_topic_selection_handler(message):
+    user_id = message.from_user.id
+    lang = user_language.get(user_id, "en")
+
+    back_text = "Ortga harakatga" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    if message.text == back_text:
+        # Send back to main action selection
+        # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        # markup.add(
+        #     types.KeyboardButton("📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else "📘 Quiz"),
+        #     types.KeyboardButton("📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
+        #     types.KeyboardButton("📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
+        # )
+        markup = get_main_menu_markup(lang)
+        bot.set_state(user_id, None, message.chat.id)
+        bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
+        return
 
 
 
@@ -3027,33 +3082,159 @@ def send_theory(message):
     lang = user_language.get(user_id, "en")  # Fallback to English
     topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
     chosen_topic = message.text
+
     if chosen_topic in topics:
         theory_text = topics[chosen_topic]["theory"]
-        bot.reply_to(message, theory_text, parse_mode="Markdown")
-        # Inline keyboard with Start Quiz and Back buttons
 
-        bot.delete_state(user_id, message.chat.id)  # Clear state
-        # bot.delete_state(user_id, message.chat.id)  # Clear state
+        chunks = split_message(theory_text)
+        for chunk in chunks:
+            bot.send_message(message.chat.id, chunk)
 
-        # Show reply keyboard with "Start Quiz" and "Back"
+        bot.set_state(user_id, "theory_viewed" ,message.chat.id)
+
         # markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-        # markup.add("🧠 Start Quiz", "🔙 Back")
         #
-        # bot.send_message(message.chat.id, "Choose an option below:", reply_markup=markup)
+        # markup.add(
+        #     types.KeyboardButton("️️Boshlash" if lang == "uz" else "️️Начинат" if lang == "ru" else "️️Start quiz"),
+        #     types.KeyboardButton("Ortga" if lang == "uz" else "Назад" if lang == "ru" else "Back"))
+        # bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
 
-        # Save the chosen topic in memory (you can store it in a dict if needed)
-        # user_selected_topic[user_id] = chosen_topic
-        # bot.set_state(user_id, "after_theory_options", message.chat.id)
+        user_selected_topic[user_id] = chosen_topic
+        markup = types.InlineKeyboardMarkup()
+        markup.add(types.InlineKeyboardButton(text="Start quiz", callback_data="action:start_quiz"))
+        markup.add(types.InlineKeyboardButton(text="⬅️ Back to topics", callback_data="action:back_to_topics"))
+        bot.send_message(message.chat.id, "Choose:", reply_markup=markup)
+
+
     else:
         bot.reply_to(message, messages[lang]["invalid_topic"])
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         for topic in topics.keys():
             markup.add(types.KeyboardButton(topic))
-
-
         bot.send_message(message.chat.id, messages[lang]["choose_topic"], reply_markup=markup)
 
 
+
+def split_message(text, chunk_size=4000):
+    lines = text.split('\n')
+    chunks = []
+    current_chunk = ""
+
+    for line in lines:
+        if len(current_chunk) + len(line) + 1 <= chunk_size:
+            current_chunk += line + "\n"
+        else:
+            chunks.append(current_chunk)
+            current_chunk = line + "\n"
+
+    if current_chunk:
+        chunks.append(current_chunk)
+
+    return chunks
+
+
+@bot.message_handler(func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "theory_viewed")
+def handle_quiz_start_or_back(message):
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+    lang = user_language.get(user_id, "en")
+    user_input = message.text.lower()
+
+    start_quiz_text = "Boshlash" if lang == "uz" else "Начать" if lang == "ru" else "Start quiz"
+    back_text = "Ortga" if lang == "uz" else "Назад" if lang == "ru" else "Back to topics"
+
+    if user_input == start_quiz_text:
+        topic = user_selected_topic.get(user_id)
+
+        if not topic:
+            bot.send_message(chat_id, "⚠️ No topic selected. Please go back and choose a topic again.")
+            return
+
+        # Get quiz data
+        quiz = topics_uz[topic]["quiz"] if lang == "uz" else topics_eng[topic]["quiz"] if lang == "en" else topics_ru[topic]["quiz"]
+
+        if not quiz:
+            bot.send_message(chat_id, "❌ Quiz not available for this topic.")
+            return
+
+        # Save quiz data and start from question 0
+        # user_quiz_progress[user_id] = {
+        #     "topic": topic,
+        #     "questions": quiz,
+        #     "current_index": 0,
+        #     "score": 0
+        # }
+
+        bot.set_state(user_id, "in_quiz", chat_id)
+        # send_quiz_question(user_id, chat_id)
+
+    elif user_input in ["⬅️ Ortga", "⬅️ Назад", "⬅️ Back to topics"]:
+        # Go back to topic selection
+        bot.set_state(user_id, "awaiting_theory_topic", chat_id)
+        topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        for topic in topics.keys():
+            markup.add(types.KeyboardButton(topic))
+
+        bot.send_message(chat_id, messages[lang]["choose_topic"], reply_markup=markup)
+
+    else:
+        bot.send_message(chat_id, "❓ Invalid option. Please choose again.")
+        bot.set_state(user_id, "awaiting_theory_topic", chat_id)
+        topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        for topic in topics.keys():
+            markup.add(types.KeyboardButton(topic))
+
+        bot.send_message(chat_id, messages[lang]["choose_topic"], reply_markup=markup)
+
+
+@bot.callback_query_handler(func=lambda call: call.data.startswith("action:"))
+def handle_quiz_callback(call):
+    user_id = call.from_user.id
+    chat_id = call.message.chat.id
+    lang = user_language.get(user_id, "en")
+    # data = call.data
+    data = call.data.split(":")[1]
+
+    if data == "start_quiz":
+        topic = user_selected_topic.get(user_id)
+        if not topic:
+            bot.send_message(chat_id, "⚠️ No topic selected. Please go back and choose a topic again.")
+            return
+        quiz = topics_uz[topic]["questions"] if lang == "uz" else \
+            topics_eng[topic]["questions"] if lang == "en" else \
+                topics_ru[topic]["questions"]
+
+        # quiz = topics_uz[topic]["quiz"] if lang == "uz" else topics_eng[topic]["quiz"] if lang == "en" else topics_ru[topic]["quiz"]
+
+        if not quiz:
+            bot.send_message(chat_id, "❌ Quiz not available for this topic.")
+            return
+
+            # ✅ Initialize quiz progress here
+        user_progress[user_id] = {
+                "language": lang,
+                "topic": topic,
+                "index": 0,
+                "score": 0
+        }
+        bot.set_state(user_id, "in_quiz", chat_id)
+        send_question(chat_id, user_id)
+
+    elif data == "back_to_topics":
+        bot.set_state(user_id, "awaiting_theory_topic", chat_id)
+        topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        for topic in topics.keys():
+            markup.add(types.KeyboardButton(topic))
+
+        bot.send_message(chat_id, messages[lang]["choose_topic"], reply_markup=markup)
+
+    bot.answer_callback_query(call.id)
 
 
 # Start quiz for selected topic
@@ -3125,7 +3306,8 @@ def send_question(chat_id, user_id):
     topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
-    questions = topics[topic]
+    # questions = topics[topic]
+    questions = topics[topic]["questions"]
 
     if index >= len(questions):
         bot.send_message(
@@ -3151,7 +3333,7 @@ def send_question(chat_id, user_id):
     bot.send_message(chat_id, message_text, reply_markup=markup)
 
 # Handle user answers
-@bot.callback_query_handler(func=lambda call: True)
+@bot.callback_query_handler(func=lambda call: call.data in ['a', 'b', 'c', 'd','e'])
 def answer_handler(call):
     user_id = call.from_user.id
     data = call.data
@@ -3165,7 +3347,8 @@ def answer_handler(call):
     topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
-    question = topics[topic][index]
+    # question = topics[topic][index]
+    question = topics[topic]["questions"][index]
     correct = question["correct"]
 
     if data == correct:

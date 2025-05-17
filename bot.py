@@ -5,1191 +5,1193 @@ from telebot import types
 API_TOKEN = '8032404481:AAEiIwEkrfTvYw5QPLL4ToQ8PFsKDFF9YCM'
 bot = telebot.TeleBot(API_TOKEN)
 
-# Example topics and questions
+# Topics and questions dataset in english
 topics_eng = {
+
     "Basic Concepts": {
-    "theory": "Fundamentals of Information Protection*\n\n"
-    "Information protection is a critical discipline focused on safeguarding sensitive data from unauthorized access, misuse, or harm. "
-    "This text explores five essential concepts—*protected information*, *information protection*, *information protection effectiveness*, "
-    "*information protection systems*, and *information protection means*—to provide a solid foundation for understanding information security principles.\n\n"
-    
-    "*1. Protected Information*\n"
-    "Protected information encompasses data that belongs to an entity, such as a government, organization, group of individuals, or a single person, "
-    "and requires safeguarding as mandated by legal regulations or the owner’s specific requirements. This type of information often includes sensitive "
-    "or confidential data, such as personal details, proprietary business records, or classified documents, which must be secured to prevent unauthorized disclosure or use.\n"
-    "_Example_: A corporation’s database containing employee social security numbers is protected information, owned by the company and safeguarded under privacy laws.\n\n"
-    
-    "*2. Information Protection*\n"
-    "Information protection refers to the activities undertaken to prevent the unauthorized disclosure of sensitive data and to shield it from unauthorized "
-    "access or deliberate harmful actions. These activities involve implementing security measures, such as encryption, access restrictions, and monitoring systems, "
-    "to ensure that data remains confidential, unaltered, and accessible only to authorized individuals.\n"
-    "_Example_: A university deploys antivirus software and conducts regular security training for staff to prevent cyberattacks on student records, demonstrating information protection.\n\n"
-    
-    "*3. Information Protection Effectiveness*\n"
-    "Information protection effectiveness evaluates how well security measures achieve their intended objectives. It measures the extent to which protection efforts "
-    "succeed in preventing data breaches, maintaining data integrity, and meeting legal or organizational security goals. This concept helps assess the performance "
-    "and reliability of implemented safeguards.\n"
-    "_Example_: If an organization aims to block all phishing attempts and its email filtering system stops 99% of such emails, the high effectiveness shows alignment with its security objectives.\n\n"
-    
-    "*4. Information Protection System*\n"
-    "An information protection system is a coordinated framework that integrates bodies (e.g., security departments), performers (e.g., IT specialists), protection equipment "
-    "(e.g., software and hardware), and protected objects (e.g., networks or databases). This system operates according to rules and standards outlined in legal, "
-    "organizational, or regulatory documents, ensuring a structured approach to data security.\n"
-    "_Example_: A government agency’s protection system includes its cybersecurity team, intrusion detection software, and compliance policies to secure sensitive public records.\n\n"
-    
-    "*5. Information Protection Means*\n"
-    "Information protection means are the tools, substances, or materials—such as technical, software, or hardware-software solutions—designed or utilized to secure data. "
-    "These include items like encryption programs, firewalls, secure storage devices, or physical security measures, which serve as the practical components for executing protection strategies.\n"
-    "_Example_: A laptop with built-in encryption software used to store confidential research data is an information protection means.\n\n"
-    
-    "*Key Takeaways*\n"
-    "- *Protected Information*: Data owned by an entity that must be secured per legal or owner requirements.\n"
-    "- *Information Protection*: Activities to prevent data leaks and defend against unauthorized or harmful actions.\n"
-    "- *Information Protection Effectiveness*: The degree to which security measures meet their goals.\n"
-    "- *Information Protection System*: A structured combination of people, tools, and processes governed by regulations.\n"
-    "- *Information Protection Means*: Tools or materials used to implement security measures.\n\n"
-    
-    "By mastering these concepts, you’ll gain a clear understanding of the principles underpinning information security, enabling you to apply them in various contexts, "
-    "from personal data protection to organizational cybersecurity.",
-    "questions": [
-        {
-            "question": "1. Define the concept of protected information",
-            "options": {
-                "a": "A set of bodies and/or performers, the information protection equipment they use, as well as protected information objects, organized and operating according to rules and norms established by relevant documents in the field of information protection",
-                "b": "The degree of compliance of information protection results with the goal of information protection",
-                "c": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
-                "d": "Technical, software, or hardware-software means, substances, and/or materials intended or used for information protection",
-                "e": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)"
+        "theory": "Fundamentals of Information Protection*\n\n"
+                  "Information protection is a critical discipline focused on safeguarding sensitive data from unauthorized access, misuse, or harm. "
+                  "This text explores five essential concepts—*protected information*, *information protection*, *information protection effectiveness*, "
+                  "*information protection systems*, and *information protection means*—to provide a solid foundation for understanding information security principles.\n\n"
+
+                  "*1. Protected Information*\n"
+                  "Protected information encompasses data that belongs to an entity, such as a government, organization, group of individuals, or a single person, "
+                  "and requires safeguarding as mandated by legal regulations or the owner’s specific requirements. This type of information often includes sensitive "
+                  "or confidential data, such as personal details, proprietary business records, or classified documents, which must be secured to prevent unauthorized disclosure or use.\n"
+                  "_Example_: A corporation’s database containing employee social security numbers is protected information, owned by the company and safeguarded under privacy laws.\n\n"
+
+                  "*2. Information Protection*\n"
+                  "Information protection refers to the activities undertaken to prevent the unauthorized disclosure of sensitive data and to shield it from unauthorized "
+                  "access or deliberate harmful actions. These activities involve implementing security measures, such as encryption, access restrictions, and monitoring systems, "
+                  "to ensure that data remains confidential, unaltered, and accessible only to authorized individuals.\n"
+                  "_Example_: A university deploys antivirus software and conducts regular security training for staff to prevent cyberattacks on student records, demonstrating information protection.\n\n"
+
+                  "*3. Information Protection Effectiveness*\n"
+                  "Information protection effectiveness evaluates how well security measures achieve their intended objectives. It measures the extent to which protection efforts "
+                  "succeed in preventing data breaches, maintaining data integrity, and meeting legal or organizational security goals. This concept helps assess the performance "
+                  "and reliability of implemented safeguards.\n"
+                  "_Example_: If an organization aims to block all phishing attempts and its email filtering system stops 99% of such emails, the high effectiveness shows alignment with its security objectives.\n\n"
+
+                  "*4. Information Protection System*\n"
+                  "An information protection system is a coordinated framework that integrates bodies (e.g., security departments), performers (e.g., IT specialists), protection equipment "
+                  "(e.g., software and hardware), and protected objects (e.g., networks or databases). This system operates according to rules and standards outlined in legal, "
+                  "organizational, or regulatory documents, ensuring a structured approach to data security.\n"
+                  "_Example_: A government agency’s protection system includes its cybersecurity team, intrusion detection software, and compliance policies to secure sensitive public records.\n\n"
+
+                  "*5. Information Protection Means*\n"
+                  "Information protection means are the tools, substances, or materials—such as technical, software, or hardware-software solutions—designed or utilized to secure data. "
+                  "These include items like encryption programs, firewalls, secure storage devices, or physical security measures, which serve as the practical components for executing protection strategies.\n"
+                  "_Example_: A laptop with built-in encryption software used to store confidential research data is an information protection means.\n\n"
+
+                  "*Key Takeaways*\n"
+                  "- *Protected Information*: Data owned by an entity that must be secured per legal or owner requirements.\n"
+                  "- *Information Protection*: Activities to prevent data leaks and defend against unauthorized or harmful actions.\n"
+                  "- *Information Protection Effectiveness*: The degree to which security measures meet their goals.\n"
+                  "- *Information Protection System*: A structured combination of people, tools, and processes governed by regulations.\n"
+                  "- *Information Protection Means*: Tools or materials used to implement security measures.\n\n"
+
+                  "By mastering these concepts, you’ll gain a clear understanding of the principles underpinning information security, enabling you to apply them in various contexts, "
+                  "from personal data protection to organizational cybersecurity.",
+        "questions": [
+            {
+                "question": "1. Define the concept of protected information",
+                "options": {
+                    "a": "A set of bodies and/or performers, the information protection equipment they use, as well as protected information objects, organized and operating according to rules and norms established by relevant documents in the field of information protection",
+                    "b": "The degree of compliance of information protection results with the goal of information protection",
+                    "c": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
+                    "d": "Technical, software, or hardware-software means, substances, and/or materials intended or used for information protection",
+                    "e": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)"
+                },
+                "correct": "e"
             },
-            "correct": "e"
-        },
-        {
-            "question": "2. Define the concept of information protection",
-            "options": {
-                "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
-                "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
-                "c": "The degree of compliance of information protection results with the set goal",
-                "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
-                "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+            {
+                "question": "2. Define the concept of information protection",
+                "options": {
+                    "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
+                    "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
+                    "c": "The degree of compliance of information protection results with the set goal",
+                    "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
+                    "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "3. Define the concept of information protection effectiveness",
-            "options": {
-                "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
-                "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
-                "c": "The degree of compliance of information protection results with the set goal",
-                "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
-                "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+            {
+                "question": "3. Define the concept of information protection effectiveness",
+                "options": {
+                    "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
+                    "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
+                    "c": "The degree of compliance of information protection results with the set goal",
+                    "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
+                    "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "4. Define the concept of an information protection system",
-            "options": {
-                "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
-                "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
-                "c": "The degree of compliance of information protection results with the set goal",
-                "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
-                "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+            {
+                "question": "4. Define the concept of an information protection system",
+                "options": {
+                    "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
+                    "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
+                    "c": "The degree of compliance of information protection results with the set goal",
+                    "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
+                    "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "5. Define the concept of information protection means",
-            "options": {
-                "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
-                "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
-                "c": "The degree of compliance of information protection results with the set goal",
-                "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
-                "e": "Technical, software means, substances, and/or materials intended or used for information protection"
-            },
-            "correct": "e"
-        }]
+            {
+                "question": "5. Define the concept of information protection means",
+                "options": {
+                    "a": "Activities aimed at preventing the leakage of protected information, unauthorized, and intentional impacts on protected information",
+                    "b": "Information that is subject to ownership and must be protected in accordance with the requirements of legal documents or requirements established by the information owner (state, legal entity, group of individuals, or an individual)",
+                    "c": "The degree of compliance of information protection results with the set goal",
+                    "d": "A set of bodies and/or performers, the information protection equipment they use, as well as protected objects, organized and operating according to rules established by relevant legal, organizational, and regulatory documents in the field of information protection",
+                    "e": "Technical, software means, substances, and/or materials intended or used for information protection"
+                },
+                "correct": "e"
+            }]
     },
     "Threats and the Intruder Model in Information Security": {
-    "theory": "*Understanding Threats and the Intruder Model in Information Security*\n\n"
-    "Information security is centered on protecting data from threats and ensuring its core properties are maintained. This text explores key concepts related to security threats, vulnerabilities, threat sources, attacks, the CIA triad, Parker's Hexad, and the intruder model, providing a foundation for understanding how information systems are safeguarded.\n\n"
-    "*1. Security Threat to an Object*\n"
-    "A security threat to an object is any potential event or action that could directly or indirectly compromise the security of that object, such as a system, network, or data. Threats can arise from various sources and exploit weaknesses, potentially leading to harm like data loss, unauthorized access, or system disruption.\n"
-    "_Example_: A phishing email attempting to steal user credentials poses a security threat to an organization’s information system.\n\n"
-    "*2. Object’s Vulnerability*\n"
-    "A vulnerability is an inherent weakness or flaw within an object—such as a system, application, or process—that can be exploited to breach information security. These weaknesses may stem from design flaws, misconfigurations, or lack of updates, making the object susceptible to threats.\n"
-    "_Example_: An unpatched software bug in a company’s server is a vulnerability that hackers could exploit to gain unauthorized access.\n\n"
-    "*3. Threat Source*\n"
-    "A threat source is any entity or phenomenon capable of carrying out a security threat. These can be human-driven (anthropogenic), technology-related (technogenic), or environmental (natural), encompassing a wide range of potential origins, from malicious actors to equipment failures or natural disasters.\n"
-    "_Example_: A disgruntled employee attempting to leak sensitive data is a human-driven threat source.\n\n"
-    "*4. Attack*\n"
-    "An attack is the realization of a security threat, where a threat source exploits existing vulnerabilities to cause harm to an object. It represents the actual consequences of a threat being carried out, such as data theft, system compromise, or service disruption.\n"
-    "_Example_: A hacker using a vulnerability in a website to steal customer data is executing an attack.\n\n"
-    "*5. Information Confidentiality*\n"
-    "Information confidentiality is the property that ensures data is accessible only to authenticated and authorized system users. It prevents unauthorized individuals from accessing sensitive information, maintaining privacy and trust.\n"
-    "_Example_: Encrypting patient records in a hospital database ensures that only authorized doctors can view them, preserving confidentiality.\n\n"
-    "*6. Information Integrity*\n"
-    "Information integrity refers to the property of data remaining accurate and unchanged in its intended meaning, despite random or intentional distortions or destructive actions. It ensures that information is reliable and trustworthy.\n"
-    "_Example_: Using checksums to verify that a downloaded file has not been altered ensures its integrity.\n\n"
-    "*7. Information Availability*\n"
-    "Information availability is the property that ensures data is accessible to authenticated and authorized users when needed. It prevents disruptions that could block legitimate access, such as denial-of-service attacks.\n"
-    "_Example_: A cloud service provider maintaining redundant servers to keep data accessible during outages supports availability.\n\n"
-    "*8. Threats Against Confidentiality, Integrity, and Availability*\n"
-    "*Threats to Confidentiality*: Actions like information theft, where unauthorized parties gain access to sensitive data, violate confidentiality.\n"
-    "_Example_: Intercepting unencrypted emails to steal trade secrets is a confidentiality threat.\n"
-    "*Threats to Integrity*: Information modification, where data is altered maliciously or accidentally, compromises integrity.\n"
-    "_Example_: Changing financial records to falsify transactions threatens integrity.\n"
-    "*Threats to Availability*: Information destruction, such as deleting critical files or launching a ransomware attack, prevents authorized users from accessing data, undermining availability.\n\n"
-    "*9. Classification of Threat Sources*\n"
-    "Threat sources are generally classified into three categories:\n"
-    "- *Anthropogenic*: Human-related sources, such as malicious insiders or external attackers.\n"
-    "- *Technogenic*: Technology-related sources, like hardware failures or software glitches.\n"
-    "- *Natural*: Environmental sources, including disasters like floods or earthquakes.\n"
-    "_Example_: A hacker (anthropogenic), a server crash (technogenic), or a tsunami (natural) are distinct threat sources.\n\n"
-    "*10. Classification of Vulnerabilities*\n"
-    "Vulnerabilities are typically classified as:\n"
-    "- *Objective*: Inherent flaws independent of human intent, like software bugs.\n"
-    "- *Subjective*: Weaknesses caused by human error, such as weak passwords.\n"
-    "- *Random*: Unpredictable flaws, like unexpected hardware failures.\n"
-    "_Example_: A coding error (objective), a poorly configured firewall (subjective), or a sudden disk failure (random) are different vulnerability types.\n\n"
-    "*11. Types of Threat Sources*\n"
-    "- *Anthropogenic Threats*: Caused by human actions, such as a drunk driver crashing into a data center’s power supply.\n"
-    "- *Technogenic Threats*: Stemming from technological failures, like an aircraft engine failure disrupting communication systems.\n"
-    "- *Natural Threats*: Arising from environmental events, such as a tsunami flooding a server facility.\n"
-    "- *External Anthropogenic Threats*: Originating outside the organization, like technical staff from a telecommunications provider attempting unauthorized access.\n"
-    "- *Internal Anthropogenic Threats*: Arising within the organization, such as a cleaner accessing restricted systems.\n"
-    "- *External Technogenic Threats*: External technology-related issues, like transport-related disruptions affecting data center operations.\n"
-    "- *Internal Technogenic Threats*: Internal technology failures, such as low-quality technical tools used within the facility.\n\n"
-    "*12. Information Security Intruder Model*\n"
-    "The information security intruder model is a framework that outlines assumptions about potential intruders, including their qualifications, motivations, and the technical or material resources they might use to breach security. It helps organizations anticipate and prepare for threats from various actors.\n"
-    "_Example_: A model might assume a highly skilled hacker with advanced tools targeting a bank’s financial systems.\n\n"
-    "*13. Types of Intruders*\n"
-    "- *Internal Intruders*: Individuals within the organization, such as internal security service employees or system operators, who may misuse their access.\n"
-    "- *External Intruders*: Entities outside the organization, like employees of oversight bodies or competitors, attempting to breach security.\n"
-    "- *Non-Internal Intruders*: External actors, such as representatives of competing organizations, who lack legitimate access.\n"
-    "- *Non-External Intruders*: Internal personnel, like users or operators, who are not considered external threats.\n"
-    "_Example_: An internal security employee (internal intruder) versus a rival company’s agent (external intruder).\n\n"
-    "*14. The CIA Triad and Parker’s Hexad*\n"
-    "*CIA Triad*: The foundational framework of information security, consisting of:\n"
-    "- *Confidentiality*: Ensuring data is only accessible to authorized users.\n"
-    "- *Integrity*: Maintaining data accuracy and trustworthiness.\n"
-    "- *Availability*: Ensuring data is accessible to authorized users when needed.\n\n"
-    "*Parker’s Hexad*: Extends the CIA triad by adding three concepts:\n"
-    "- *Authenticity*: Verifying the identity of users or data sources.\n"
-    "- *Possession*: Ensuring control over data to prevent unauthorized use.\n"
-    "- *Utility*: Ensuring data remains useful for its intended purpose.\n"
-    "_Example_: A secure email system ensures confidentiality (only intended recipients read it), integrity (content is unaltered), availability (accessible to recipients), authenticity (sender is verified), possession (data stays under recipient control), and utility (data remains usable)",
-    "questions": [
-        {
-            "question": "6. Define the concept of a security threat to an object",
-            "options": {
-                "a": "A possible impact on an object that directly or indirectly may harm its security",
-                "b": "Inherent reasons within an object that lead to a breach of information security",
-                "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
-                "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+        "theory": "*Understanding Threats and the Intruder Model in Information Security*\n\n"
+                  "Information security is centered on protecting data from threats and ensuring its core properties are maintained. This text explores key concepts related to security threats, vulnerabilities, threat sources, attacks, the CIA triad, Parker's Hexad, and the intruder model, providing a foundation for understanding how information systems are safeguarded.\n\n"
+                  "*1. Security Threat to an Object*\n"
+                  "A security threat to an object is any potential event or action that could directly or indirectly compromise the security of that object, such as a system, network, or data. Threats can arise from various sources and exploit weaknesses, potentially leading to harm like data loss, unauthorized access, or system disruption.\n"
+                  "_Example_: A phishing email attempting to steal user credentials poses a security threat to an organization’s information system.\n\n"
+                  "*2. Object’s Vulnerability*\n"
+                  "A vulnerability is an inherent weakness or flaw within an object—such as a system, application, or process—that can be exploited to breach information security. These weaknesses may stem from design flaws, misconfigurations, or lack of updates, making the object susceptible to threats.\n"
+                  "_Example_: An unpatched software bug in a company’s server is a vulnerability that hackers could exploit to gain unauthorized access.\n\n"
+                  "*3. Threat Source*\n"
+                  "A threat source is any entity or phenomenon capable of carrying out a security threat. These can be human-driven (anthropogenic), technology-related (technogenic), or environmental (natural), encompassing a wide range of potential origins, from malicious actors to equipment failures or natural disasters.\n"
+                  "_Example_: A disgruntled employee attempting to leak sensitive data is a human-driven threat source.\n\n"
+                  "*4. Attack*\n"
+                  "An attack is the realization of a security threat, where a threat source exploits existing vulnerabilities to cause harm to an object. It represents the actual consequences of a threat being carried out, such as data theft, system compromise, or service disruption.\n"
+                  "_Example_: A hacker using a vulnerability in a website to steal customer data is executing an attack.\n\n"
+                  "*5. Information Confidentiality*\n"
+                  "Information confidentiality is the property that ensures data is accessible only to authenticated and authorized system users. It prevents unauthorized individuals from accessing sensitive information, maintaining privacy and trust.\n"
+                  "_Example_: Encrypting patient records in a hospital database ensures that only authorized doctors can view them, preserving confidentiality.\n\n"
+                  "*6. Information Integrity*\n"
+                  "Information integrity refers to the property of data remaining accurate and unchanged in its intended meaning, despite random or intentional distortions or destructive actions. It ensures that information is reliable and trustworthy.\n"
+                  "_Example_: Using checksums to verify that a downloaded file has not been altered ensures its integrity.\n\n"
+                  "*7. Information Availability*\n"
+                  "Information availability is the property that ensures data is accessible to authenticated and authorized users when needed. It prevents disruptions that could block legitimate access, such as denial-of-service attacks.\n"
+                  "_Example_: A cloud service provider maintaining redundant servers to keep data accessible during outages supports availability.\n\n"
+                  "*8. Threats Against Confidentiality, Integrity, and Availability*\n"
+                  "*Threats to Confidentiality*: Actions like information theft, where unauthorized parties gain access to sensitive data, violate confidentiality.\n"
+                  "_Example_: Intercepting unencrypted emails to steal trade secrets is a confidentiality threat.\n"
+                  "*Threats to Integrity*: Information modification, where data is altered maliciously or accidentally, compromises integrity.\n"
+                  "_Example_: Changing financial records to falsify transactions threatens integrity.\n"
+                  "*Threats to Availability*: Information destruction, such as deleting critical files or launching a ransomware attack, prevents authorized users from accessing data, undermining availability.\n\n"
+                  "*9. Classification of Threat Sources*\n"
+                  "Threat sources are generally classified into three categories:\n"
+                  "- *Anthropogenic*: Human-related sources, such as malicious insiders or external attackers.\n"
+                  "- *Technogenic*: Technology-related sources, like hardware failures or software glitches.\n"
+                  "- *Natural*: Environmental sources, including disasters like floods or earthquakes.\n"
+                  "_Example_: A hacker (anthropogenic), a server crash (technogenic), or a tsunami (natural) are distinct threat sources.\n\n"
+                  "*10. Classification of Vulnerabilities*\n"
+                  "Vulnerabilities are typically classified as:\n"
+                  "- *Objective*: Inherent flaws independent of human intent, like software bugs.\n"
+                  "- *Subjective*: Weaknesses caused by human error, such as weak passwords.\n"
+                  "- *Random*: Unpredictable flaws, like unexpected hardware failures.\n"
+                  "_Example_: A coding error (objective), a poorly configured firewall (subjective), or a sudden disk failure (random) are different vulnerability types.\n\n"
+                  "*11. Types of Threat Sources*\n"
+                  "- *Anthropogenic Threats*: Caused by human actions, such as a drunk driver crashing into a data center’s power supply.\n"
+                  "- *Technogenic Threats*: Stemming from technological failures, like an aircraft engine failure disrupting communication systems.\n"
+                  "- *Natural Threats*: Arising from environmental events, such as a tsunami flooding a server facility.\n"
+                  "- *External Anthropogenic Threats*: Originating outside the organization, like technical staff from a telecommunications provider attempting unauthorized access.\n"
+                  "- *Internal Anthropogenic Threats*: Arising within the organization, such as a cleaner accessing restricted systems.\n"
+                  "- *External Technogenic Threats*: External technology-related issues, like transport-related disruptions affecting data center operations.\n"
+                  "- *Internal Technogenic Threats*: Internal technology failures, such as low-quality technical tools used within the facility.\n\n"
+                  "*12. Information Security Intruder Model*\n"
+                  "The information security intruder model is a framework that outlines assumptions about potential intruders, including their qualifications, motivations, and the technical or material resources they might use to breach security. It helps organizations anticipate and prepare for threats from various actors.\n"
+                  "_Example_: A model might assume a highly skilled hacker with advanced tools targeting a bank’s financial systems.\n\n"
+                  "*13. Types of Intruders*\n"
+                  "- *Internal Intruders*: Individuals within the organization, such as internal security service employees or system operators, who may misuse their access.\n"
+                  "- *External Intruders*: Entities outside the organization, like employees of oversight bodies or competitors, attempting to breach security.\n"
+                  "- *Non-Internal Intruders*: External actors, such as representatives of competing organizations, who lack legitimate access.\n"
+                  "- *Non-External Intruders*: Internal personnel, like users or operators, who are not considered external threats.\n"
+                  "_Example_: An internal security employee (internal intruder) versus a rival company’s agent (external intruder).\n\n"
+                  "*14. The CIA Triad and Parker’s Hexad*\n"
+                  "*CIA Triad*: The foundational framework of information security, consisting of:\n"
+                  "- *Confidentiality*: Ensuring data is only accessible to authorized users.\n"
+                  "- *Integrity*: Maintaining data accuracy and trustworthiness.\n"
+                  "- *Availability*: Ensuring data is accessible to authorized users when needed.\n\n"
+                  "*Parker’s Hexad*: Extends the CIA triad by adding three concepts:\n"
+                  "- *Authenticity*: Verifying the identity of users or data sources.\n"
+                  "- *Possession*: Ensuring control over data to prevent unauthorized use.\n"
+                  "- *Utility*: Ensuring data remains useful for its intended purpose.\n"
+                  "_Example_: A secure email system ensures confidentiality (only intended recipients read it), integrity (content is unaltered), availability (accessible to recipients), authenticity (sender is verified), possession (data stays under recipient control), and utility (data remains usable)",
+        "questions": [
+            {
+                "question": "6. Define the concept of a security threat to an object",
+                "options": {
+                    "a": "A possible impact on an object that directly or indirectly may harm its security",
+                    "b": "Inherent reasons within an object that lead to a breach of information security",
+                    "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
+                    "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "7. Define the concept of an object's vulnerability",
-            "options": {
-                "a": "A possible impact on an object that directly or indirectly may harm its security",
-                "b": "Inherent reasons within an object that lead to a breach of information security",
-                "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
-                "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+            {
+                "question": "7. Define the concept of an object's vulnerability",
+                "options": {
+                    "a": "A possible impact on an object that directly or indirectly may harm its security",
+                    "b": "Inherent reasons within an object that lead to a breach of information security",
+                    "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
+                    "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "8. Define the concept of a threat source",
-            "options": {
-                "a": "A possible impact on an object that directly or indirectly may harm its security",
-                "b": "Inherent reasons within an object that lead to a breach of information security",
-                "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
-                "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+            {
+                "question": "8. Define the concept of a threat source",
+                "options": {
+                    "a": "A possible impact on an object that directly or indirectly may harm its security",
+                    "b": "Inherent reasons within an object that lead to a breach of information security",
+                    "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
+                    "d": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "9. Define the concept of an attack",
-            "options": {
-                "a": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
-                "b": "Technical, software means, substances, and/or materials intended or used for information protection",
-                "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
-                "d": "Inherent reasons within an object that lead to a breach of information security",
-                "e": "A possible impact on an object that directly or indirectly may harm its security"
+            {
+                "question": "9. Define the concept of an attack",
+                "options": {
+                    "a": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
+                    "b": "Technical, software means, substances, and/or materials intended or used for information protection",
+                    "c": "Potential anthropogenic, technogenic, or natural carriers of security threats",
+                    "d": "Inherent reasons within an object that lead to a breach of information security",
+                    "e": "A possible impact on an object that directly or indirectly may harm its security"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "10. What is information confidentiality?",
-            "options": {
-                "a": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
-                "b": "The property of information to be known only to authenticated legitimate system subjects",
-                "c": "The property of information to be accessible to authenticated legitimate system subjects",
-                "d": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
-                "e": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means"
+            {
+                "question": "10. What is information confidentiality?",
+                "options": {
+                    "a": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
+                    "b": "The property of information to be known only to authenticated legitimate system subjects",
+                    "c": "The property of information to be accessible to authenticated legitimate system subjects",
+                    "d": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
+                    "e": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "11. What is information integrity?",
-            "options": {
-                "a": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
-                "b": "The property of information to be known only to authenticated legitimate system subjects",
-                "c": "The property of information to be accessible to authenticated legitimate system subjects",
-                "d": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
-                "e": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means"
+            {
+                "question": "11. What is information integrity?",
+                "options": {
+                    "a": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
+                    "b": "The property of information to be known only to authenticated legitimate system subjects",
+                    "c": "The property of information to be accessible to authenticated legitimate system subjects",
+                    "d": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
+                    "e": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "12. What is information availability?",
-            "options": {
-                "a": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
-                "b": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
-                "c": "The property of information to be accessible to authenticated legitimate system subjects",
-                "d": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means",
-                "e": "The property of information to be known only to authenticated legitimate system subjects"
+            {
+                "question": "12. What is information availability?",
+                "options": {
+                    "a": "The property of information to indicate possible consequences of threat realization through interaction with a threat source via existing vulnerabilities",
+                    "b": "The property of information to remain unchanged in a semantic sense during system operation under conditions of random or intentional distortions or destructive impacts",
+                    "c": "The property of information to be accessible to authenticated legitimate system subjects",
+                    "d": "The property of information to provide a set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means",
+                    "e": "The property of information to be known only to authenticated legitimate system subjects"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "13. Which of the listed threats pertains to threats against information confidentiality?",
-            "options": {
-                "a": "Information theft",
-                "b": "Information destruction",
-                "c": "Information modification"
+            {
+                "question": "13. Which of the listed threats pertains to threats against information confidentiality?",
+                "options": {
+                    "a": "Information theft",
+                    "b": "Information destruction",
+                    "c": "Information modification"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "14. Which of the listed threats pertains to threats against information availability?",
-            "options": {
-                "a": "Information theft",
-                "b": "Information destruction",
-                "c": "Information modification"
+            {
+                "question": "14. Which of the listed threats pertains to threats against information availability?",
+                "options": {
+                    "a": "Information theft",
+                    "b": "Information destruction",
+                    "c": "Information modification"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "15. Which of the listed threats pertains to threats against information integrity?",
-            "options": {
-                "a": "Information theft",
-                "b": "Information destruction",
-                "c": "Information modification"
+            {
+                "question": "15. Which of the listed threats pertains to threats against information integrity?",
+                "options": {
+                    "a": "Information theft",
+                    "b": "Information destruction",
+                    "c": "Information modification"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "16. Which classification of threat sources is generally recognized?",
-            "options": {
-                "a": "Anthropogenic, technogenic, natural",
-                "b": "Objective, subjective, random",
-                "c": "Local, global, extraterrestrial"
+            {
+                "question": "16. Which classification of threat sources is generally recognized?",
+                "options": {
+                    "a": "Anthropogenic, technogenic, natural",
+                    "b": "Objective, subjective, random",
+                    "c": "Local, global, extraterrestrial"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "17. Which classification of vulnerabilities of a protected object is generally recognized?",
-            "options": {
-                "a": "Objective, subjective, random",
-                "b": "Anthropogenic, technogenic, natural",
-                "c": "External and internal"
+            {
+                "question": "17. Which classification of vulnerabilities of a protected object is generally recognized?",
+                "options": {
+                    "a": "Objective, subjective, random",
+                    "b": "Anthropogenic, technogenic, natural",
+                    "c": "External and internal"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "18. Which of the listed threat sources pertains to anthropogenic threats?",
-            "options": {
-                "a": "Impact of electromagnetic fields from power lines",
-                "b": "Relay contact sticking",
-                "c": "Flood",
-                "d": "Tornado",
-                "e": "Drunk driver"
+            {
+                "question": "18. Which of the listed threat sources pertains to anthropogenic threats?",
+                "options": {
+                    "a": "Impact of electromagnetic fields from power lines",
+                    "b": "Relay contact sticking",
+                    "c": "Flood",
+                    "d": "Tornado",
+                    "e": "Drunk driver"
+                },
+                "correct": "e"
             },
-            "correct": "e"
-        },
-        {
-            "question": "19. Which of the listed threat sources pertains to technogenic threats?",
-            "options": {
-                "a": "Aircraft engine failure",
-                "b": "Tsunami",
-                "c": "Drunk driver",
-                "d": "Flood",
-                "e": "Tornado"
+            {
+                "question": "19. Which of the listed threat sources pertains to technogenic threats?",
+                "options": {
+                    "a": "Aircraft engine failure",
+                    "b": "Tsunami",
+                    "c": "Drunk driver",
+                    "d": "Flood",
+                    "e": "Tornado"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "20. Which of the listed threat sources pertains to natural threats?",
-            "options": {
-                "a": "Tsunami",
-                "b": "Aircraft engine failure",
-                "c": "Drunk driver",
-                "d": "Impact of electromagnetic fields from power lines",
-                "e": "Relay contact sticking"
+            {
+                "question": "20. Which of the listed threat sources pertains to natural threats?",
+                "options": {
+                    "a": "Tsunami",
+                    "b": "Aircraft engine failure",
+                    "c": "Drunk driver",
+                    "d": "Impact of electromagnetic fields from power lines",
+                    "e": "Relay contact sticking"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "21. Which of the listed threat sources is an external anthropogenic threat?",
-            "options": {
-                "a": "Technical staff of telecommunications service providers",
-                "b": "Communication means",
-                "c": "Cleaner",
-                "d": "Transport",
-                "e": "Tornado"
+            {
+                "question": "21. Which of the listed threat sources is an external anthropogenic threat?",
+                "options": {
+                    "a": "Technical staff of telecommunications service providers",
+                    "b": "Communication means",
+                    "c": "Cleaner",
+                    "d": "Transport",
+                    "e": "Tornado"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "22. Which of the listed threat sources is an internal anthropogenic threat?",
-            "options": {
-                "a": "Communication means",
-                "b": "Force majeure circumstances",
-                "c": "Criminal structures",
-                "d": "Cleaner",
-                "e": "Low-quality software tools for information processing used at the facility"
+            {
+                "question": "22. Which of the listed threat sources is an internal anthropogenic threat?",
+                "options": {
+                    "a": "Communication means",
+                    "b": "Force majeure circumstances",
+                    "c": "Criminal structures",
+                    "d": "Cleaner",
+                    "e": "Low-quality software tools for information processing used at the facility"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "23. Which of the listed threat sources is an external technogenic threat?",
-            "options": {
-                "a": "Transport",
-                "b": "Cleaner",
-                "c": "Tornado",
-                "d": "Criminal structures",
-                "e": "Flood"
+            {
+                "question": "23. Which of the listed threat sources is an external technogenic threat?",
+                "options": {
+                    "a": "Transport",
+                    "b": "Cleaner",
+                    "c": "Tornado",
+                    "d": "Criminal structures",
+                    "e": "Flood"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "24. Which of the listed threat sources is an internal technogenic threat?",
-            "options": {
-                "a": "Low-quality technical information processing tools used at the facility",
-                "b": "Cleaner",
-                "c": "Tornado",
-                "d": "Criminal structures",
-                "e": "Flood"
+            {
+                "question": "24. Which of the listed threat sources is an internal technogenic threat?",
+                "options": {
+                    "a": "Low-quality technical information processing tools used at the facility",
+                    "b": "Cleaner",
+                    "c": "Tornado",
+                    "d": "Criminal structures",
+                    "e": "Flood"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "25. What is the information security intruder model?",
-            "options": {
-                "a": "A set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means",
-                "b": "A possible impact on an object that directly or indirectly may harm its security",
-                "c": "Inherent reasons within an object that lead to a breach of information security",
-                "d": "Potential anthropogenic, technogenic, or natural carriers of security threats",
-                "e": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+            {
+                "question": "25. What is the information security intruder model?",
+                "options": {
+                    "a": "A set of assumptions about one or more potential information security intruders, their qualifications, and their technical and material means",
+                    "b": "A possible impact on an object that directly or indirectly may harm its security",
+                    "c": "Inherent reasons within an object that lead to a breach of information security",
+                    "d": "Potential anthropogenic, technogenic, or natural carriers of security threats",
+                    "e": "Possible consequences of threat realization through interaction with a threat source via existing vulnerabilities"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "26. Which of the listed types of information security intruders pertains to internal intruders?",
-            "options": {
-                "a": "Internal security service employees",
-                "b": "Representatives of competing organizations",
-                "c": "Employees of departmental oversight and management bodies"
+            {
+                "question": "26. Which of the listed types of information security intruders pertains to internal intruders?",
+                "options": {
+                    "a": "Internal security service employees",
+                    "b": "Representatives of competing organizations",
+                    "c": "Employees of departmental oversight and management bodies"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "27. Which of the listed types of information security intruders does not pertain to internal intruders?",
-            "options": {
-                "a": "Representatives of competing organizations",
-                "b": "Internal security service employees",
-                "c": "Cleaner"
+            {
+                "question": "27. Which of the listed types of information security intruders does not pertain to internal intruders?",
+                "options": {
+                    "a": "Representatives of competing organizations",
+                    "b": "Internal security service employees",
+                    "c": "Cleaner"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "28. Which of the listed types of information security intruders pertains to external intruders?",
-            "options": {
-                "a": "Employees of departmental oversight and management bodies",
-                "b": "Internal security service employees",
-                "c": "Cleaner"
+            {
+                "question": "28. Which of the listed types of information security intruders pertains to external intruders?",
+                "options": {
+                    "a": "Employees of departmental oversight and management bodies",
+                    "b": "Internal security service employees",
+                    "c": "Cleaner"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "29. Which of the listed types of information security intruders does not pertain to external intruders?",
-            "options": {
-                "a": "Users and operators of the information system",
-                "b": "Representatives of competing organizations",
-                "c": "Invited visitors",
-                "d": "Observers outside the protected area",
-                "e": "Violators of the access control regime"
+            {
+                "question": "29. Which of the listed types of information security intruders does not pertain to external intruders?",
+                "options": {
+                    "a": "Users and operators of the information system",
+                    "b": "Representatives of competing organizations",
+                    "c": "Invited visitors",
+                    "d": "Observers outside the protected area",
+                    "e": "Violators of the access control regime"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "30. Which three concepts form the CIA triad?",
-            "options": {
-                "a": "Confidentiality, availability, and integrity",
-                "b": "Peace, labor, May",
-                "c": "Yesterday, today, tomorrow",
-                "d": "Authenticity, possession, and utility"
+            {
+                "question": "30. Which three concepts form the CIA triad?",
+                "options": {
+                    "a": "Confidentiality, availability, and integrity",
+                    "b": "Peace, labor, May",
+                    "c": "Yesterday, today, tomorrow",
+                    "d": "Authenticity, possession, and utility"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "31. Which three concepts complement the CIA triad to form Parker's Hexad?",
-            "options": {
-                "a": "Authenticity, possession, and utility",
-                "b": "Confidentiality, availability, and integrity",
-                "c": "Peace, labor, May",
-                "d": "Creation, editing, deletion"
-            },
-            "correct": "a"
-        }]
+            {
+                "question": "31. Which three concepts complement the CIA triad to form Parker's Hexad?",
+                "options": {
+                    "a": "Authenticity, possession, and utility",
+                    "b": "Confidentiality, availability, and integrity",
+                    "c": "Peace, labor, May",
+                    "d": "Creation, editing, deletion"
+                },
+                "correct": "a"
+            }]
     },
     "Software Protection Methods": {
-    "theory": "*Overview of Software and Information Protection Methods*\n\n"
-    "Information protection methods are critical for securing software and data within computing systems. This text explores various software protection methods, "
-    "including self-protection, methods using system tools, and those involving information requests, as well as key abbreviations and distinctions between hardware, "
-    "software, and organizational protection methods.\n\n"
+        "theory": "*Overview of Software and Information Protection Methods*\n\n"
+                  "Information protection methods are critical for securing software and data within computing systems. This text explores various software protection methods, "
+                  "including self-protection, methods using system tools, and those involving information requests, as well as key abbreviations and distinctions between hardware, "
+                  "software, and organizational protection methods.\n\n"
 
-    "*1. Self-Protection Methods in Software*\n"
-    "Self-protection methods refer to strategies where the software system itself is designed or configured to maintain its own security without relying heavily on "
-    "external tools or user intervention. These methods often involve internal processes, such as regular system maintenance, updates, or automated security checks, "
-    "to ensure the software remains secure and operational.\n"
-    "_Example_: A software application that automatically checks for and applies security patches during maintenance cycles is using a self-protection method.\n\n"
+                  "*1. Self-Protection Methods in Software*\n"
+                  "Self-protection methods refer to strategies where the software system itself is designed or configured to maintain its own security without relying heavily on "
+                  "external tools or user intervention. These methods often involve internal processes, such as regular system maintenance, updates, or automated security checks, "
+                  "to ensure the software remains secure and operational.\n"
+                  "_Example_: A software application that automatically checks for and applies security patches during maintenance cycles is using a self-protection method.\n\n"
 
-    "*2. Protection Methods Using Tools Within a Computing System*\n"
-    "Some software protection methods leverage specialized hardware or tools integrated within the computing system to enhance security. These methods rely on dedicated "
-    "hardware components, such as trusted platform modules (TPMs) or hardware security modules (HSMs), to perform security functions like encryption or secure key storage.\n"
-    "_Example_: A server using a dedicated hardware encryption module to protect sensitive data transactions is employing a protection method within the computing system.\n\n"
+                  "*2. Protection Methods Using Tools Within a Computing System*\n"
+                  "Some software protection methods leverage specialized hardware or tools integrated within the computing system to enhance security. These methods rely on dedicated "
+                  "hardware components, such as trusted platform modules (TPMs) or hardware security modules (HSMs), to perform security functions like encryption or secure key storage.\n"
+                  "_Example_: A server using a dedicated hardware encryption module to protect sensitive data transactions is employing a protection method within the computing system.\n\n"
 
-    "*3. Protection Methods Involving Information Requests*\n"
-    "Certain software protection methods require users to provide specific information to gain access, ensuring that only authorized individuals can interact with the system. "
-    "These methods commonly involve authentication mechanisms, such as passwords, biometrics, or security tokens, to verify user identity before granting access.\n"
-    "_Example_: A banking application requiring a user to enter a password and a one-time code sent to their phone is using a protection method involving information requests.\n\n"
+                  "*3. Protection Methods Involving Information Requests*\n"
+                  "Certain software protection methods require users to provide specific information to gain access, ensuring that only authorized individuals can interact with the system. "
+                  "These methods commonly involve authentication mechanisms, such as passwords, biometrics, or security tokens, to verify user identity before granting access.\n"
+                  "_Example_: A banking application requiring a user to enter a password and a one-time code sent to their phone is using a protection method involving information requests.\n\n"
 
-    "*4. Abbreviation: НСД (Unauthorized Access)*\n"
-    "In information protection systems, the abbreviation *НСД* stands for unauthorized access. This term refers to any attempt to gain entry to a system, network, or data "
-    "without proper authorization, posing a significant security threat that protection methods aim to prevent.\n"
-    "_Example_: A hacker attempting to log into a corporate network without credentials is engaging in НСД (unauthorized access).\n\n"
+                  "*4. Abbreviation: НСД (Unauthorized Access)*\n"
+                  "In information protection systems, the abbreviation *НСД* stands for unauthorized access. This term refers to any attempt to gain entry to a system, network, or data "
+                  "without proper authorization, posing a significant security threat that protection methods aim to prevent.\n"
+                  "_Example_: A hacker attempting to log into a corporate network without credentials is engaging in НСД (unauthorized access).\n\n"
 
-    "*5. Abbreviation: НСК (Unauthorized Copying)*\n"
-    "The abbreviation *НСК* in information protection systems denotes unauthorized copying. This refers to the act of duplicating protected data or software without permission, "
-    "often leading to intellectual property theft or data breaches.\n"
-    "_Example_: An employee copying proprietary software code to a personal device without approval is committing НСК (unauthorized copying).\n\n"
+                  "*5. Abbreviation: НСК (Unauthorized Copying)*\n"
+                  "The abbreviation *НСК* in information protection systems denotes unauthorized copying. This refers to the act of duplicating protected data or software without permission, "
+                  "often leading to intellectual property theft or data breaches.\n"
+                  "_Example_: An employee copying proprietary software code to a personal device without approval is committing НСК (unauthorized copying).\n\n"
 
-    "*6. Hardware-Based Information Protection Methods*\n"
-    "Hardware-based protection methods involve physical devices or components designed to secure information. These methods often focus on shielding systems from external interference, "
-    "such as electromagnetic eavesdropping, or preventing physical tampering with hardware.\n"
-    "_Example_: Installing electromagnetic shielding around a data center to block signal interception is a hardware-based protection method.\n\n"
+                  "*6. Hardware-Based Information Protection Methods*\n"
+                  "Hardware-based protection methods involve physical devices or components designed to secure information. These methods often focus on shielding systems from external interference, "
+                  "such as electromagnetic eavesdropping, or preventing physical tampering with hardware.\n"
+                  "_Example_: Installing electromagnetic shielding around a data center to block signal interception is a hardware-based protection method.\n\n"
 
-    "*7. Software-Based Information Protection Methods*\n"
-    "Software-based protection methods rely on programs or algorithms to secure data and systems. These methods include techniques like file encryption, antivirus software, or "
-    "intrusion detection systems, which operate within the software environment to protect information.\n"
-    "_Example_: Encrypting sensitive documents with a software tool to prevent unauthorized access is a software-based protection method.\n\n"
+                  "*7. Software-Based Information Protection Methods*\n"
+                  "Software-based protection methods rely on programs or algorithms to secure data and systems. These methods include techniques like file encryption, antivirus software, or "
+                  "intrusion detection systems, which operate within the software environment to protect information.\n"
+                  "_Example_: Encrypting sensitive documents with a software tool to prevent unauthorized access is a software-based protection method.\n\n"
 
-    "*8. Organizational Information Protection Methods*\n"
-    "Organizational protection methods involve policies, procedures, and administrative controls to safeguard information. These methods focus on managing human behavior and system access "
-    "through rules, training, and access control regimes to minimize security risks.\n"
-    "_Example_: Implementing a policy that restricts physical and digital access to sensitive areas of an office to authorized personnel only is an organizational protection method.",
-    "questions": [
-        {
-            "question": "32. Which software protection method pertains to self-protection methods?",
-            "options": {
-                "a": "Maintenance organization",
-                "b": "Use of passwords",
-                "c": "Use of specialized hardware"
+                  "*8. Organizational Information Protection Methods*\n"
+                  "Organizational protection methods involve policies, procedures, and administrative controls to safeguard information. These methods focus on managing human behavior and system access "
+                  "through rules, training, and access control regimes to minimize security risks.\n"
+                  "_Example_: Implementing a policy that restricts physical and digital access to sensitive areas of an office to authorized personnel only is an organizational protection method.",
+        "questions": [
+            {
+                "question": "32. Which software protection method pertains to self-protection methods?",
+                "options": {
+                    "a": "Maintenance organization",
+                    "b": "Use of passwords",
+                    "c": "Use of specialized hardware"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "33. Which software protection method pertains to methods using protection tools within a computing system?",
-            "options": {
-                "a": "Maintenance organization",
-                "b": "Use of passwords",
-                "c": "Use of specialized hardware"
+            {
+                "question": "33. Which software protection method pertains to methods using protection tools within a computing system?",
+                "options": {
+                    "a": "Maintenance organization",
+                    "b": "Use of passwords",
+                    "c": "Use of specialized hardware"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "34. Which software protection method pertains to methods involving information requests?",
-            "options": {
-                "a": "Maintenance organization",
-                "b": "Use of passwords",
-                "c": "Use of specialized hardware"
+            {
+                "question": "34. Which software protection method pertains to methods involving information requests?",
+                "options": {
+                    "a": "Maintenance organization",
+                    "b": "Use of passwords",
+                    "c": "Use of specialized hardware"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "35. What does the abbreviation НСД stand for in information protection systems?",
-            "options": {
-                "a": "Unauthorized access",
-                "b": "Shielding",
-                "c": "Unauthorized copying",
-                "d": "File encryption"
+            {
+                "question": "35. What does the abbreviation НСД stand for in information protection systems?",
+                "options": {
+                    "a": "Unauthorized access",
+                    "b": "Shielding",
+                    "c": "Unauthorized copying",
+                    "d": "File encryption"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "36. What does the abbreviation НСК stand for in information protection systems?",
-            "options": {
-                "a": "Unauthorized access",
-                "b": "Shielding",
-                "c": "Unauthorized copying",
-                "d": "File encryption"
+            {
+                "question": "36. What does the abbreviation НСК stand for in information protection systems?",
+                "options": {
+                    "a": "Unauthorized access",
+                    "b": "Shielding",
+                    "c": "Unauthorized copying",
+                    "d": "File encryption"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "37. Which of the following pertains to hardware-based information protection methods?",
-            "options": {
-                "a": "Access control regime organization",
-                "b": "Shielding",
-                "d": "File encryption"
+            {
+                "question": "37. Which of the following pertains to hardware-based information protection methods?",
+                "options": {
+                    "a": "Access control regime organization",
+                    "b": "Shielding",
+                    "d": "File encryption"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "38. Which of the following pertains to software-based information protection methods?",
-            "options": {
-                "a": "Shielding",
-                "b": "File encryption",
-                "c": "Acoustic masking tools using white noise generators",
-                "d": "Access control regime organization",
-                "e": "Protection of a personal computer case from tampering"
+            {
+                "question": "38. Which of the following pertains to software-based information protection methods?",
+                "options": {
+                    "a": "Shielding",
+                    "b": "File encryption",
+                    "c": "Acoustic masking tools using white noise generators",
+                    "d": "Access control regime organization",
+                    "e": "Protection of a personal computer case from tampering"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "39. Which of the following pertains to organizational information protection methods?",
-            "options": {
-                "a": "Shielding",
-                "b": "File encryption",
-                "c": "Acoustic masking tools using white noise generators",
-                "d": "Access control regime organization",
-                "e": "Protection of a personal computer case from tampering"
-            },
-            "correct": "d"
-        }]
-},
+            {
+                "question": "39. Which of the following pertains to organizational information protection methods?",
+                "options": {
+                    "a": "Shielding",
+                    "b": "File encryption",
+                    "c": "Acoustic masking tools using white noise generators",
+                    "d": "Access control regime organization",
+                    "e": "Protection of a personal computer case from tampering"
+                },
+                "correct": "d"
+            }]
+    },
     "Cryptographic Methods for Protecting Software and Databases": {
-    "theory": "*Fundamentals of Cryptographic Methods for Information Security*\n\n"
-    "Cryptographic methods are essential for protecting software and databases by transforming information to prevent unauthorized access, ensure authenticity, and maintain integrity. "
-    "This text explores cryptographic transformations, symmetric and asymmetric cryptosystems, specific algorithms, cipher types, and their applications.\n\n"
+        "theory": "*Fundamentals of Cryptographic Methods for Information Security*\n\n"
+                  "Cryptographic methods are essential for protecting software and databases by transforming information to prevent unauthorized access, ensure authenticity, and maintain integrity. "
+                  "This text explores cryptographic transformations, symmetric and asymmetric cryptosystems, specific algorithms, cipher types, and their applications.\n\n"
 
-    "*1. Cryptographic Information Transformation*\n"
-    "Cryptographic information transformation alters data to secure it from unauthorized access or tampering. A key method is *steganography*, which hides a message within another medium.\n"
-    "_Example_: Hiding a message in the pixels of a photo is steganography.\n\n"
+                  "*1. Cryptographic Information Transformation*\n"
+                  "Cryptographic information transformation alters data to secure it from unauthorized access or tampering. A key method is *steganography*, which hides a message within another medium.\n"
+                  "_Example_: Hiding a message in the pixels of a photo is steganography.\n\n"
 
-    "*2. Non-Cryptographic Transformations*\n"
-    "Methods like copying, compression, or translation are not cryptographic since they don’t protect or obscure access.\n"
-    "_Example_: Copying a database file to a backup drive.\n\n"
+                  "*2. Non-Cryptographic Transformations*\n"
+                  "Methods like copying, compression, or translation are not cryptographic since they don’t protect or obscure access.\n"
+                  "_Example_: Copying a database file to a backup drive.\n\n"
 
-    "*3. Symmetric Cryptosystems*\n"
-    "Use the same key for encryption and decryption. Fast and efficient for bulk data.\n"
-    "_Example_: DES encrypts employee records with a shared secret key.\n\n"
+                  "*3. Symmetric Cryptosystems*\n"
+                  "Use the same key for encryption and decryption. Fast and efficient for bulk data.\n"
+                  "_Example_: DES encrypts employee records with a shared secret key.\n\n"
 
-    "*4. Asymmetric Cryptosystems*\n"
-    "Use a public key for encryption and a private key for decryption. Suitable for secure communication.\n"
-    "_Example_: An email encrypted with a public ElGamal key, decrypted by the private key.\n\n"
+                  "*4. Asymmetric Cryptosystems*\n"
+                  "Use a public key for encryption and a private key for decryption. Suitable for secure communication.\n"
+                  "_Example_: An email encrypted with a public ElGamal key, decrypted by the private key.\n\n"
 
-    "*5. Digital Signatures*\n"
-    "Verify message authenticity and integrity. RSA is a widely used algorithm.\n"
-    "_Example_: A developer signs an update with an RSA digital signature.\n\n"
+                  "*5. Digital Signatures*\n"
+                  "Verify message authenticity and integrity. RSA is a widely used algorithm.\n"
+                  "_Example_: A developer signs an update with an RSA digital signature.\n\n"
 
-    "*6. Classical Symmetric Cryptosystems*\n"
-    "Use simple substitution/transposition methods. Examples: Caesar cipher, Alberti’s disk, Vigenère table.\n"
-    "_Example_: Caesar cipher shifts letters by 3 positions.\n\n"
+                  "*6. Classical Symmetric Cryptosystems*\n"
+                  "Use simple substitution/transposition methods. Examples: Caesar cipher, Alberti’s disk, Vigenère table.\n"
+                  "_Example_: Caesar cipher shifts letters by 3 positions.\n\n"
 
-    "*7. Types of Ciphers*\n"
-    "- *Monoalphabetic Cipher*: Fixed substitution (e.g., Caesar, scytale).\n"
-    "- *Polyalphabetic Cipher*: Multiple substitutions (e.g., Alberti’s disk, Vigenère table).\n"
-    "- *Electromechanical Cipher Machine*: Uses moving parts (e.g., Enigma).\n"
-    "- *Software/Hardware Mathematical Cipher*: Uses algorithms and secret keys (e.g., AES).\n"
-    "- *Asymmetric Cryptosystems*: Public/private key pairs (e.g., RSA).\n\n"
-    "_Examples_: Scytale (monoalphabetic), Alberti’s disk (polyalphabetic), Enigma (electromechanical), AES (software/hardware), RSA (asymmetric).\n\n"
+                  "*7. Types of Ciphers*\n"
+                  "- *Monoalphabetic Cipher*: Fixed substitution (e.g., Caesar, scytale).\n"
+                  "- *Polyalphabetic Cipher*: Multiple substitutions (e.g., Alberti’s disk, Vigenère table).\n"
+                  "- *Electromechanical Cipher Machine*: Uses moving parts (e.g., Enigma).\n"
+                  "- *Software/Hardware Mathematical Cipher*: Uses algorithms and secret keys (e.g., AES).\n"
+                  "- *Asymmetric Cryptosystems*: Public/private key pairs (e.g., RSA).\n\n"
+                  "_Examples_: Scytale (monoalphabetic), Alberti’s disk (polyalphabetic), Enigma (electromechanical), AES (software/hardware), RSA (asymmetric).\n\n"
 
-    "*8. Algorithm Classifications*\n"
-    "- *Caesar & Vigenère*: Symmetric cryptosystems with shared keys.\n"
-    "- *DES*: Symmetric with secret key.\n"
-    "- *RSA*: Asymmetric with public/private keys.\n"
-    "_Example_: DES encrypts a database; RSA secures communication.\n\n"
+                  "*8. Algorithm Classifications*\n"
+                  "- *Caesar & Vigenère*: Symmetric cryptosystems with shared keys.\n"
+                  "- *DES*: Symmetric with secret key.\n"
+                  "- *RSA*: Asymmetric with public/private keys.\n"
+                  "_Example_: DES encrypts a database; RSA secures communication.\n\n"
 
-    "*9. Algorithm Applications*\n"
-    "- *ElGamal*: Used for digital signatures.\n"
-    "- *Diffie-Hellman*: Secure key exchange over insecure channels.\n"
-    "_Example_: ElGamal signs a digital contract; Diffie-Hellman establishes a shared key.\n\n"
+                  "*9. Algorithm Applications*\n"
+                  "- *ElGamal*: Used for digital signatures.\n"
+                  "- *Diffie-Hellman*: Secure key exchange over insecure channels.\n"
+                  "_Example_: ElGamal signs a digital contract; Diffie-Hellman establishes a shared key.\n\n"
 
-    "*10. DES Specifications*\n"
-    "- *Encryption Cycles*: 16 rounds.\n"
-    "- *Key Length*: 64 bits (56-bit effective).\n"
-    "- *Block Size*: 64-bit data blocks.\n"
-    "_Example_: DES encrypts 64-bit blocks of financial data in 16 cycles with a 64-bit key.",
-    "questions":[
-        {
-            "question": "40. Which of the following is a method of cryptographic information transformation?",
-            "options": {
-                "a": "Steganography",
-                "b": "Stenography",
-                "c": "Printing",
-                "d": "Translation to another language"
+                  "*10. DES Specifications*\n"
+                  "- *Encryption Cycles*: 16 rounds.\n"
+                  "- *Key Length*: 64 bits (56-bit effective).\n"
+                  "- *Block Size*: 64-bit data blocks.\n"
+                  "_Example_: DES encrypts 64-bit blocks of financial data in 16 cycles with a 64-bit key.",
+        "questions": [
+            {
+                "question": "40. Which of the following is a method of cryptographic information transformation?",
+                "options": {
+                    "a": "Steganography",
+                    "b": "Stenography",
+                    "c": "Printing",
+                    "d": "Translation to another language"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "41. Which of the following is not a method of cryptographic information transformation?",
-            "options": {
-                "a": "Encryption",
-                "b": "Encoding",
-                "c": "Compression",
-                "d": "Copying",
-                "e": "Steganography"
+            {
+                "question": "41. Which of the following is not a method of cryptographic information transformation?",
+                "options": {
+                    "a": "Encryption",
+                    "b": "Encoding",
+                    "c": "Compression",
+                    "d": "Copying",
+                    "e": "Steganography"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "42. Which of the listed algorithms pertains to symmetric cryptosystems?",
-            "options": {
-                "a": "DES",
-                "b": "RSA",
-                "c": "ElGamal"
+            {
+                "question": "42. Which of the listed algorithms pertains to symmetric cryptosystems?",
+                "options": {
+                    "a": "DES",
+                    "b": "RSA",
+                    "c": "ElGamal"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "43. Which of the listed algorithms pertains to asymmetric cryptosystems?",
-            "options": {
-                "a": "Diffie-Hellman",
-                "b": "ElGamal",
-                "c": "DES",
-                "d": "MD5",
-                "e": "GOST 28147-89"
+            {
+                "question": "43. Which of the listed algorithms pertains to asymmetric cryptosystems?",
+                "options": {
+                    "a": "Diffie-Hellman",
+                    "b": "ElGamal",
+                    "c": "DES",
+                    "d": "MD5",
+                    "e": "GOST 28147-89"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "44. Which of the listed algorithms is used for creating a digital signature?",
-            "options": {
-                "a": "RSA",
-                "b": "DES",
-                "c": "GOST 28147-89"
+            {
+                "question": "44. Which of the listed algorithms is used for creating a digital signature?",
+                "options": {
+                    "a": "RSA",
+                    "b": "DES",
+                    "c": "GOST 28147-89"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "45. Which of the listed algorithms does not pertain to classical symmetric cryptosystems?",
-            "options": {
-                "a": "GOST 28147-89",
-                "b": "Caesar cipher",
-                "c": "Encryption using Alberti's disk",
-                "d": "Encryption using the Vigenère table"
+            {
+                "question": "45. Which of the listed algorithms does not pertain to classical symmetric cryptosystems?",
+                "options": {
+                    "a": "GOST 28147-89",
+                    "b": "Caesar cipher",
+                    "c": "Encryption using Alberti's disk",
+                    "d": "Encryption using the Vigenère table"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "46. What type of cipher is encryption using a scytale?",
-            "options": {
-                "a": "Polyalphabetic cipher",
-                "b": "Monoalphabetic cipher",
-                "c": "Using an electromechanical cipher machine",
-                "d": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "e": "Using a software or hardware mathematical cipher with an open key"
+            {
+                "question": "46. What type of cipher is encryption using a scytale?",
+                "options": {
+                    "a": "Polyalphabetic cipher",
+                    "b": "Monoalphabetic cipher",
+                    "c": "Using an electromechanical cipher machine",
+                    "d": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "e": "Using a software or hardware mathematical cipher with an open key"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "47. What type of cipher is encryption using the Caesar cipher?",
-            "options": {
-                "a": "Using an electromechanical cipher machine",
-                "b": "Monoalphabetic cipher",
-                "c": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "d": "Polyalphabetic cipher",
-                "e": "Using a software or hardware mathematical cipher with an open key"
+            {
+                "question": "47. What type of cipher is encryption using the Caesar cipher?",
+                "options": {
+                    "a": "Using an electromechanical cipher machine",
+                    "b": "Monoalphabetic cipher",
+                    "c": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "d": "Polyalphabetic cipher",
+                    "e": "Using a software or hardware mathematical cipher with an open key"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "48. What type of cipher is encryption using Alberti's disk?",
-            "options": {
-                "a": "Polyalphabetic cipher",
-                "b": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "c": "Using an electromechanical cipher machine",
-                "d": "Monoalphabetic cipher",
-                "e": "Using a software or hardware mathematical cipher with an open key"
+            {
+                "question": "48. What type of cipher is encryption using Alberti's disk?",
+                "options": {
+                    "a": "Polyalphabetic cipher",
+                    "b": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "c": "Using an electromechanical cipher machine",
+                    "d": "Monoalphabetic cipher",
+                    "e": "Using a software or hardware mathematical cipher with an open key"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "49. What type of cipher is encryption using the Vigenère table?",
-            "options": {
-                "a": "Monoalphabetic cipher",
-                "b": "Polyalphabetic cipher",
-                "c": "Using an electromechanical cipher machine",
-                "d": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "e": "Using a software or hardware mathematical cipher with an open key"
+            {
+                "question": "49. What type of cipher is encryption using the Vigenère table?",
+                "options": {
+                    "a": "Monoalphabetic cipher",
+                    "b": "Polyalphabetic cipher",
+                    "c": "Using an electromechanical cipher machine",
+                    "d": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "e": "Using a software or hardware mathematical cipher with an open key"
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "50. What type of cipher is encryption using the Enigma machine?",
-            "options": {
-                "a": "Using an electromechanical cipher machine",
-                "b": "Monoalphabetic cipher",
-                "c": "Polyalphabetic cipher",
-                "d": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "e": "Using a software or hardware mathematical cipher with an open key"
+            {
+                "question": "50. What type of cipher is encryption using the Enigma machine?",
+                "options": {
+                    "a": "Using an electromechanical cipher machine",
+                    "b": "Monoalphabetic cipher",
+                    "c": "Polyalphabetic cipher",
+                    "d": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "e": "Using a software or hardware mathematical cipher with an open key"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "51. What type of cipher is encryption using Triple DES?",
-            "options": {
-                "a": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "b": "Using a software or hardware mathematical cipher with an open key",
-                "c": "Monoalphabetic cipher",
-                "d": "Polyalphabetic cipher",
-                "e": "Using an electromechanical cipher machine"
+            {
+                "question": "51. What type of cipher is encryption using Triple DES?",
+                "options": {
+                    "a": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "b": "Using a software or hardware mathematical cipher with an open key",
+                    "c": "Monoalphabetic cipher",
+                    "d": "Polyalphabetic cipher",
+                    "e": "Using an electromechanical cipher machine"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "52. What type of cipher is encryption using AES?",
-            "options": {
-                "a": "Using a software or hardware mathematical cipher with a secret or closed key",
-                "b": "Using a software or hardware mathematical cipher with an open key",
-                "c": "Monoalphabetic cipher",
-                "d": "Polyalphabetic cipher",
-                "e": "Using an electromechanical cipher machine"
+            {
+                "question": "52. What type of cipher is encryption using AES?",
+                "options": {
+                    "a": "Using a software or hardware mathematical cipher with a secret or closed key",
+                    "b": "Using a software or hardware mathematical cipher with an open key",
+                    "c": "Monoalphabetic cipher",
+                    "d": "Polyalphabetic cipher",
+                    "e": "Using an electromechanical cipher machine"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "53. What type of cipher is encryption using RSA?",
-            "options": {
-                "a": "Key distribution algorithms",
-                "b": "Hash functions",
-                "c": "Cryptosystems with a closed key",
-                "d": "Asymmetric cryptosystems",
-                "e": "Symmetric cryptosystems"
+            {
+                "question": "53. What type of cipher is encryption using RSA?",
+                "options": {
+                    "a": "Key distribution algorithms",
+                    "b": "Hash functions",
+                    "c": "Cryptosystems with a closed key",
+                    "d": "Asymmetric cryptosystems",
+                    "e": "Symmetric cryptosystems"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "54. What class of encryption algorithms does the Caesar cipher belong to?",
-            "options": {
-                "a": "Symmetric cryptosystems",
-                "b": "Cryptosystems with an open key",
-                "c": "Hash functions",
-                "d": "Asymmetric cryptosystems",
-                "e": "Key distribution algorithms"
+            {
+                "question": "54. What class of encryption algorithms does the Caesar cipher belong to?",
+                "options": {
+                    "a": "Symmetric cryptosystems",
+                    "b": "Cryptosystems with an open key",
+                    "c": "Hash functions",
+                    "d": "Asymmetric cryptosystems",
+                    "e": "Key distribution algorithms"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "55. What class of encryption algorithms does encryption with the Vigenère table belong to?",
-            "options": {
-                "a": "Symmetric cryptosystems",
-                "b": "Cryptosystems with an open key",
-                "c": "Hash functions",
-                "d": "Asymmetric cryptosystems",
-                "e": "Key distribution algorithms"
+            {
+                "question": "55. What class of encryption algorithms does encryption with the Vigenère table belong to?",
+                "options": {
+                    "a": "Symmetric cryptosystems",
+                    "b": "Cryptosystems with an open key",
+                    "c": "Hash functions",
+                    "d": "Asymmetric cryptosystems",
+                    "e": "Key distribution algorithms"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "56. What class of encryption algorithms does the DES algorithm belong to?",
-            "options": {
-                "a": "Cryptosystems with an open key",
-                "b": "Hash functions",
-                "c": "Asymmetric cryptosystems",
-                "d": "Cryptosystems with a closed key",
-                "e": "Key distribution algorithms"
+            {
+                "question": "56. What class of encryption algorithms does the DES algorithm belong to?",
+                "options": {
+                    "a": "Cryptosystems with an open key",
+                    "b": "Hash functions",
+                    "c": "Asymmetric cryptosystems",
+                    "d": "Cryptosystems with a closed key",
+                    "e": "Key distribution algorithms"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "57. What class of encryption algorithms does the RSA algorithm belong to?",
-            "options": {
-                "a": "Asymmetric cryptosystems",
-                "b": "Cryptosystems with a closed key",
-                "c": "Key distribution algorithms",
-                "d": "Symmetric cryptosystems",
-                "e": "Hash functions"
+            {
+                "question": "57. What class of encryption algorithms does the RSA algorithm belong to?",
+                "options": {
+                    "a": "Asymmetric cryptosystems",
+                    "b": "Cryptosystems with a closed key",
+                    "c": "Key distribution algorithms",
+                    "d": "Symmetric cryptosystems",
+                    "e": "Hash functions"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "58. What is the ElGamal algorithm used for?",
-            "options": {
-                "a": "For creating digital signatures",
-                "b": "For secure key transmission",
-                "c": "For symmetric encryption"
+            {
+                "question": "58. What is the ElGamal algorithm used for?",
+                "options": {
+                    "a": "For creating digital signatures",
+                    "b": "For secure key transmission",
+                    "c": "For symmetric encryption"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "59. What is the Diffie-Hellman algorithm used for?",
-            "options": {
-                "a": "For secure key transmission",
-                "b": "For creating digital signatures",
-                "c": "For symmetric encryption"
+            {
+                "question": "59. What is the Diffie-Hellman algorithm used for?",
+                "options": {
+                    "a": "For secure key transmission",
+                    "b": "For creating digital signatures",
+                    "c": "For symmetric encryption"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "60. How many encryption cycles does the DES algorithm contain?",
-            "options": {
-                "a": "16",
-                "b": "32",
-                "c": "64",
-                "d": "2",
-                "e": "8"
+            {
+                "question": "60. How many encryption cycles does the DES algorithm contain?",
+                "options": {
+                    "a": "16",
+                    "b": "32",
+                    "c": "64",
+                    "d": "2",
+                    "e": "8"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "61. What is the key length of DES?",
-            "options": {
-                "a": "64 bits",
-                "b": "128 bits",
-                "c": "256 bits",
-                "d": "1024 bits",
-                "e": "32 bits"
+            {
+                "question": "61. What is the key length of DES?",
+                "options": {
+                    "a": "64 bits",
+                    "b": "128 bits",
+                    "c": "256 bits",
+                    "d": "1024 bits",
+                    "e": "32 bits"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "62. What is the length of the information block encrypted by the DES algorithm?",
-            "options": {
-                "a": "64 bits",
-                "b": "128 bits",
-                "c": "256 bits",
-                "d": "1024 bits",
-                "e": "32 bits"
-            },
-            "correct": "a"
-        }
-    ]
-},
+            {
+                "question": "62. What is the length of the information block encrypted by the DES algorithm?",
+                "options": {
+                    "a": "64 bits",
+                    "b": "128 bits",
+                    "c": "256 bits",
+                    "d": "1024 bits",
+                    "e": "32 bits"
+                },
+                "correct": "a"
+            }
+        ]
+    },
     "Authentication Means for Software and Database Protection": {
-    "theory": "*Authentication Methods for Securing Software and Databases*\n\n"
-    "Authentication is a cornerstone of information security, ensuring that only authorized users can access software systems and databases. "
-    "This text explores various authentication methods, including those based on known information, physical tokens, individual physical characteristics, "
-    "and biometric techniques, providing a clear understanding of how these methods protect sensitive data.\n\n"
+        "theory": "*Authentication Methods for Securing Software and Databases*\n\n"
+                  "Authentication is a cornerstone of information security, ensuring that only authorized users can access software systems and databases. "
+                  "This text explores various authentication methods, including those based on known information, physical tokens, individual physical characteristics, "
+                  "and biometric techniques, providing a clear understanding of how these methods protect sensitive data.\n\n"
 
-    "*1. Authentication Based on Conditional, Pre-Assigned Attributes*\n"
-    "Authentication methods based on conditional, pre-assigned attributes rely on information known only to the authorized user, such as a secret code or phrase. "
-    "These methods verify identity by checking whether the user can provide the correct pre-assigned data, making them simple yet effective for securing access.\n"
-    "_Example_: A user logging into a banking app by entering a password is authenticated using a pre-assigned attribute.\n\n"
+                  "*1. Authentication Based on Conditional, Pre-Assigned Attributes*\n"
+                  "Authentication methods based on conditional, pre-assigned attributes rely on information known only to the authorized user, such as a secret code or phrase. "
+                  "These methods verify identity by checking whether the user can provide the correct pre-assigned data, making them simple yet effective for securing access.\n"
+                  "_Example_: A user logging into a banking app by entering a password is authenticated using a pre-assigned attribute.\n\n"
 
-    "*2. Authentication Based on Physical Means*\n"
-    "Some authentication methods use physical devices that function similarly to a traditional key, granting access when presented. "
-    "These devices, often portable and secure, contain cryptographic or identification data that the system verifies to authenticate the user.\n"
-    "_Example_: A smart card inserted into a reader to unlock a secure workstation acts like a physical key for authentication.\n\n"
+                  "*2. Authentication Based on Physical Means*\n"
+                  "Some authentication methods use physical devices that function similarly to a traditional key, granting access when presented. "
+                  "These devices, often portable and secure, contain cryptographic or identification data that the system verifies to authenticate the user.\n"
+                  "_Example_: A smart card inserted into a reader to unlock a secure workstation acts like a physical key for authentication.\n\n"
 
-    "*3. Authentication Based on Individual Characteristics*\n"
-    "Authentication methods based on individual characteristics leverage unique physical or behavioral traits that distinguish one person from another. "
-    "These traits are inherent to the user and difficult to replicate, providing a high level of security for verifying identity.\n"
-    "_Example_: A fingerprint scanner unlocking a smartphone uses the user’s unique fingerprint pattern to authenticate access.\n\n"
+                  "*3. Authentication Based on Individual Characteristics*\n"
+                  "Authentication methods based on individual characteristics leverage unique physical or behavioral traits that distinguish one person from another. "
+                  "These traits are inherent to the user and difficult to replicate, providing a high level of security for verifying identity.\n"
+                  "_Example_: A fingerprint scanner unlocking a smartphone uses the user’s unique fingerprint pattern to authenticate access.\n\n"
 
-    "*4. Biometric Authentication Means*\n"
-    "Biometric authentication methods rely on measurable biological or behavioral characteristics, such as physical features or patterns, to verify identity. "
-    "These methods are highly secure due to the uniqueness of biometric data, which is challenging to forge or steal.\n"
-    "_Example_: An iris scanner at a secure facility authenticates employees by analyzing the unique patterns in their eyes.\n\n"
+                  "*4. Biometric Authentication Means*\n"
+                  "Biometric authentication methods rely on measurable biological or behavioral characteristics, such as physical features or patterns, to verify identity. "
+                  "These methods are highly secure due to the uniqueness of biometric data, which is challenging to forge or steal.\n"
+                  "_Example_: An iris scanner at a secure facility authenticates employees by analyzing the unique patterns in their eyes.\n\n"
 
-    "*5. Non-Biometric Authentication Means*\n"
-    "Not all authentication methods are biometric. Non-biometric methods include those based on knowledge (e.g., passwords), possession (e.g., physical tokens), "
-    "or other non-physiological mechanisms. These methods do not rely on the user’s biological or behavioral traits.\n"
-    "_Example_: Using a USB key with embedded cryptographic credentials to access a database is a non-biometric authentication method.",
-    "questions":[
-        {
-            "question": "63. Which of the listed authentication means pertains to those based on conditional, pre-assigned attributes (information) known to the subject?",
-            "options": {
-                "a": "Password-based means",
-                "b": "Smart card",
-                "c": "By fingerprint",
-                "d": "By iris",
-                "e": "Using a USB key"
+                  "*5. Non-Biometric Authentication Means*\n"
+                  "Not all authentication methods are biometric. Non-biometric methods include those based on knowledge (e.g., passwords), possession (e.g., physical tokens), "
+                  "or other non-physiological mechanisms. These methods do not rely on the user’s biological or behavioral traits.\n"
+                  "_Example_: Using a USB key with embedded cryptographic credentials to access a database is a non-biometric authentication method.",
+        "questions": [
+            {
+                "question": "63. Which of the listed authentication means pertains to those based on conditional, pre-assigned attributes (information) known to the subject?",
+                "options": {
+                    "a": "Password-based means",
+                    "b": "Smart card",
+                    "c": "By fingerprint",
+                    "d": "By iris",
+                    "e": "Using a USB key"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "64. Which of the listed authentication means pertains to those based on physical means acting similarly to a physical key?",
-            "options": {
-                "a": "Smart card",
-                "b": "Password-based means",
-                "c": "By fingerprint",
-                "d": "By iris",
-                "e": "By typing pattern"
+            {
+                "question": "64. Which of the listed authentication means pertains to those based on physical means acting similarly to a physical key?",
+                "options": {
+                    "a": "Smart card",
+                    "b": "Password-based means",
+                    "c": "By fingerprint",
+                    "d": "By iris",
+                    "e": "By typing pattern"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "65. Which of the listed authentication means pertains to those based on individual characteristics of the subject, their physical data, allowing them to be distinguished from others?",
-            "options": {
-                "a": "By fingerprint",
-                "b": "Smart card",
-                "c": "Password-based means",
-                "d": "Using a USB key",
-                "e": "PIN code"
+            {
+                "question": "65. Which of the listed authentication means pertains to those based on individual characteristics of the subject, their physical data, allowing them to be distinguished from others?",
+                "options": {
+                    "a": "By fingerprint",
+                    "b": "Smart card",
+                    "c": "Password-based means",
+                    "d": "Using a USB key",
+                    "e": "PIN code"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "66. Which of the listed authentication means pertains to biometric means?",
-            "options": {
-                "a": "By iris",
-                "b": "Smart card",
-                "c": "Password-based means",
-                "d": "Using a USB key",
-                "e": "PIN code"
+            {
+                "question": "66. Which of the listed authentication means pertains to biometric means?",
+                "options": {
+                    "a": "By iris",
+                    "b": "Smart card",
+                    "c": "Password-based means",
+                    "d": "Using a USB key",
+                    "e": "PIN code"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "67. Which of the listed authentication means does not pertain to biometric means?",
-            "options": {
-                "a": "Using a USB key",
-                "b": "By voice",
-                "c": "By fingerprint",
-                "d": "By iris",
-                "e": "By typing pattern"
-            },
-            "correct": "a"
-        }
-    ]
-},
-    "Access Control Rules":{
-    "theory": "*Principles of Access Control for Information Security*\n\n"
-    "Access control is a fundamental aspect of information security, ensuring that only authorized users can interact with protected resources, such as software, databases, or data elements. "
-    "This text explores key access control principles, including mandatory access control, discretionary access control, role-based access control, and access control based on access control lists, "
-    "providing a clear understanding of how these methods regulate access.\n\n"
+            {
+                "question": "67. Which of the listed authentication means does not pertain to biometric means?",
+                "options": {
+                    "a": "Using a USB key",
+                    "b": "By voice",
+                    "c": "By fingerprint",
+                    "d": "By iris",
+                    "e": "By typing pattern"
+                },
+                "correct": "a"
+            }
+        ]
+    },
+    "Access Control Rules": {
+        "theory": "*Principles of Access Control for Information Security*\n\n"
+                  "Access control is a fundamental aspect of information security, ensuring that only authorized users can interact with protected resources, such as software, databases, or data elements. "
+                  "This text explores key access control principles, including mandatory access control, discretionary access control, role-based access control, and access control based on access control lists, "
+                  "providing a clear understanding of how these methods regulate access.\n\n"
 
-    "*1. Mandatory Access Control (MAC)*\n"
-    "Mandatory access control is a strict access control principle where each protected resource is assigned a unique label, such as a security classification or identifier. "
-    "Access to the resource is granted only to users who present a matching label in their request, which is typically issued by a system administrator or the resource’s owner. "
-    "This centralized approach enforces rigid security policies, often used in high-security environments.\n"
-    "_Example_: In a military database, a document labeled \"Top Secret\" can only be accessed by users with a \"Top Secret\" clearance label assigned by the security officer.\n\n"
+                  "*1. Mandatory Access Control (MAC)*\n"
+                  "Mandatory access control is a strict access control principle where each protected resource is assigned a unique label, such as a security classification or identifier. "
+                  "Access to the resource is granted only to users who present a matching label in their request, which is typically issued by a system administrator or the resource’s owner. "
+                  "This centralized approach enforces rigid security policies, often used in high-security environments.\n"
+                  "_Example_: In a military database, a document labeled \"Top Secret\" can only be accessed by users with a \"Top Secret\" clearance label assigned by the security officer.\n\n"
 
-    "*2. Access Control Based on Access Control Lists (ACLs)*\n"
-    "This method involves creating a list for each protected data element that specifies which users or groups are granted access rights to that element. "
-    "The ACL defines permissions, such as read, write, or execute, for each listed user, allowing fine-grained control over access to resources.\n"
-    "_Example_: A shared folder on a company server has an ACL listing employees who can view or edit its contents, with specific permissions assigned to each.\n\n"
+                  "*2. Access Control Based on Access Control Lists (ACLs)*\n"
+                  "This method involves creating a list for each protected data element that specifies which users or groups are granted access rights to that element. "
+                  "The ACL defines permissions, such as read, write, or execute, for each listed user, allowing fine-grained control over access to resources.\n"
+                  "_Example_: A shared folder on a company server has an ACL listing employees who can view or edit its contents, with specific permissions assigned to each.\n\n"
 
-    "*3. Role-Based Access Control (RBAC)*\n"
-    "RBAC assigns access rights based on roles within an organization, such as job positions or scopes of responsibility. Users are granted permissions according to their role, "
-    "which corresponds to predefined duties, simplifying access management in large organizations.\n"
-    "_Example_: In a hospital, a \"Doctor\" role grants access to patient records, while a \"Receptionist\" role is limited to scheduling data, based on job responsibilities.\n\n"
+                  "*3. Role-Based Access Control (RBAC)*\n"
+                  "RBAC assigns access rights based on roles within an organization, such as job positions or scopes of responsibility. Users are granted permissions according to their role, "
+                  "which corresponds to predefined duties, simplifying access management in large organizations.\n"
+                  "_Example_: In a hospital, a \"Doctor\" role grants access to patient records, while a \"Receptionist\" role is limited to scheduling data, based on job responsibilities.\n\n"
 
-    "*4. Discretionary Access Control (DAC)*\n"
-    "DAC allows the owner of a protected resource to determine who can access it and what permissions they have. This principle often uses an access matrix, where rows represent registered users, "
-    "columns represent protected data elements, and cells specify permissions (e.g., read or write). DAC offers flexibility but relies on the owner’s discretion.\n"
-    "_Example_: A project manager creates a document and uses an access matrix to grant read-only access to team members and full edit rights to a co-lead.",
-    "questions": [
-        {
-            "question": "68. Identify the access control principle based on its description: Each protected element is assigned a unique personal label, after which access to this element will be granted only to the user who presents the element’s label in their request, which can be issued by the administrator or the element’s owner.",
-            "options": {
-                "a": "Mandatory access control",
-                "b": "Discretionary access control",
-                "c": "Role-based access control",
-                "d": "Access control based on access control lists"
+                  "*4. Discretionary Access Control (DAC)*\n"
+                  "DAC allows the owner of a protected resource to determine who can access it and what permissions they have. This principle often uses an access matrix, where rows represent registered users, "
+                  "columns represent protected data elements, and cells specify permissions (e.g., read or write). DAC offers flexibility but relies on the owner’s discretion.\n"
+                  "_Example_: A project manager creates a document and uses an access matrix to grant read-only access to team members and full edit rights to a co-lead.",
+        "questions": [
+            {
+                "question": "68. Identify the access control principle based on its description: Each protected element is assigned a unique personal label, after which access to this element will be granted only to the user who presents the element’s label in their request, which can be issued by the administrator or the element’s owner.",
+                "options": {
+                    "a": "Mandatory access control",
+                    "b": "Discretionary access control",
+                    "c": "Role-based access control",
+                    "d": "Access control based on access control lists"
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "69. Identify the access control principle based on its description: For each element of protected data, a list is compiled of all users who are granted access rights to the respective element.",
-            "options": {
-                "a": "Mandatory access control",
-                "b": "Discretionary access control",
-                "c": "Role-based access control",
-                "d": "Access control based on access control lists"
+            {
+                "question": "69. Identify the access control principle based on its description: For each element of protected data, a list is compiled of all users who are granted access rights to the respective element.",
+                "options": {
+                    "a": "Mandatory access control",
+                    "b": "Discretionary access control",
+                    "c": "Role-based access control",
+                    "d": "Access control based on access control lists"
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "70. Identify the access control principle based on its description: Concepts such as 'position' and 'scope of job responsibilities' are used, which must correspond to the list of various positions existing in the organization.",
-            "options": {
-                "a": "Mandatory access control",
-                "b": "Discretionary access control",
-                "c": "Role-based access control",
-                "d": "Access control based on access control lists"
+            {
+                "question": "70. Identify the access control principle based on its description: Concepts such as 'position' and 'scope of job responsibilities' are used, which must correspond to the list of various positions existing in the organization.",
+                "options": {
+                    "a": "Mandatory access control",
+                    "b": "Discretionary access control",
+                    "c": "Role-based access control",
+                    "d": "Access control based on access control lists"
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "71. Identify the access control principle based on its description: The table rows contain identifiers of registered users, the columns contain identifiers of protected data elements, and the table cells contain permissions.",
-            "options": {
-                "a": "Mandatory access control",
-                "b": "Discretionary access control",
-                "c": "Role-based access control",
-                "d": "Access control based on access control lists"
-            },
-            "correct": "b"
-        }]
-},
+            {
+                "question": "71. Identify the access control principle based on its description: The table rows contain identifiers of registered users, the columns contain identifiers of protected data elements, and the table cells contain permissions.",
+                "options": {
+                    "a": "Mandatory access control",
+                    "b": "Discretionary access control",
+                    "c": "Role-based access control",
+                    "d": "Access control based on access control lists"
+                },
+                "correct": "b"
+            }]
+    },
     "Network Security": {
-    "theory": "*Essentials of Network Security*\n\n"
-    "Network security is critical for protecting data and systems in interconnected environments. This text explores key concepts, including traffic filtering, firewalls, "
-    "proxy servers, network traffic monitoring, intrusion detection systems, and various types of malicious software, providing a foundation for understanding how to safeguard computer networks.\n\n"
+        "theory": "*Essentials of Network Security*\n\n"
+                  "Network security is critical for protecting data and systems in interconnected environments. This text explores key concepts, including traffic filtering, firewalls, "
+                  "proxy servers, network traffic monitoring, intrusion detection systems, and various types of malicious software, providing a foundation for understanding how to safeguard computer networks.\n\n"
 
-    "*1. Traffic Filtering*\n"
-    "Traffic filtering involves the processing of IP packets by network devices, such as routers or firewalls, to selectively discard certain packets or redirect their paths based on predefined rules. "
-    "This process helps control network traffic, block malicious content, and ensure efficient data flow.\n"
-    "_Example_: A router discards packets from an untrusted IP address to prevent unauthorized access to a company’s network.\n\n"
+                  "*1. Traffic Filtering*\n"
+                  "Traffic filtering involves the processing of IP packets by network devices, such as routers or firewalls, to selectively discard certain packets or redirect their paths based on predefined rules. "
+                  "This process helps control network traffic, block malicious content, and ensure efficient data flow.\n"
+                  "_Example_: A router discards packets from an untrusted IP address to prevent unauthorized access to a company’s network.\n\n"
 
-    "*2. Firewall*\n"
-    "A firewall is a combination of software and hardware tools designed to protect one segment of a computer network from another by analyzing and filtering the traffic that passes between them. "
-    "Firewalls enforce security policies, blocking unauthorized access while allowing legitimate communication.\n"
-    "_Example_: A corporate firewall blocks incoming traffic from suspicious sources while permitting employees to access internal databases securely.\n\n"
+                  "*2. Firewall*\n"
+                  "A firewall is a combination of software and hardware tools designed to protect one segment of a computer network from another by analyzing and filtering the traffic that passes between them. "
+                  "Firewalls enforce security policies, blocking unauthorized access while allowing legitimate communication.\n"
+                  "_Example_: A corporate firewall blocks incoming traffic from suspicious sources while permitting employees to access internal databases securely.\n\n"
 
-    "*3. Proxy Server*\n"
-    "A proxy server acts as an intermediary between clients on an internal (protected) network and servers on an external (potentially unsafe) network. It handles requests on behalf of clients, "
-    "enhancing security by masking internal network details and filtering harmful content.\n"
-    "_Example_: A proxy server in an office filters web requests, blocking malicious sites while allowing employees to browse approved external resources.\n\n"
+                  "*3. Proxy Server*\n"
+                  "A proxy server acts as an intermediary between clients on an internal (protected) network and servers on an external (potentially unsafe) network. It handles requests on behalf of clients, "
+                  "enhancing security by masking internal network details and filtering harmful content.\n"
+                  "_Example_: A proxy server in an office filters web requests, blocking malicious sites while allowing employees to browse approved external resources.\n\n"
 
-    "*4. Network Traffic Monitoring*\n"
-    "Network traffic monitoring is the continuous, automated process of observing specific traffic parameters to ensure compliance with service level agreements, support network planning, "
-    "and prevent issues like technical failures, threats, or malicious attacks. It provides insights into network performance and security.\n"
-    "_Example_: A network administrator uses monitoring tools to detect unusual traffic spikes, identifying a potential denial-of-service attack early.\n\n"
+                  "*4. Network Traffic Monitoring*\n"
+                  "Network traffic monitoring is the continuous, automated process of observing specific traffic parameters to ensure compliance with service level agreements, support network planning, "
+                  "and prevent issues like technical failures, threats, or malicious attacks. It provides insights into network performance and security.\n"
+                  "_Example_: A network administrator uses monitoring tools to detect unusual traffic spikes, identifying a potential denial-of-service attack early.\n\n"
 
-    "*5. Intrusion Detection System*\n"
-    "An intrusion detection system (IDS) is a software or hardware tool that continuously monitors network traffic and user activities to prevent, detect, and log potential attacks. "
-    "It alerts administrators to suspicious behavior, aiding in rapid response to security threats.\n"
-    "_Example_: An IDS flags repeated failed login attempts on a server, alerting the security team to a possible brute-force attack.\n\n"
+                  "*5. Intrusion Detection System*\n"
+                  "An intrusion detection system (IDS) is a software or hardware tool that continuously monitors network traffic and user activities to prevent, detect, and log potential attacks. "
+                  "It alerts administrators to suspicious behavior, aiding in rapid response to security threats.\n"
+                  "_Example_: An IDS flags repeated failed login attempts on a server, alerting the security team to a possible brute-force attack.\n\n"
 
-    "*6. Trojan Program*\n"
-    "A Trojan program is malicious software that disguises itself as a legitimate or useful application but performs harmful actions, such as stealing data or compromising system security, once installed. "
-    "It relies on user interaction to infiltrate systems.\n"
-    "_Example_: A user downloads a seemingly harmless game that secretly logs their keystrokes to steal passwords, revealing it as a Trojan.\n\n"
+                  "*6. Trojan Program*\n"
+                  "A Trojan program is malicious software that disguises itself as a legitimate or useful application but performs harmful actions, such as stealing data or compromising system security, once installed. "
+                  "It relies on user interaction to infiltrate systems.\n"
+                  "_Example_: A user downloads a seemingly harmless game that secretly logs their keystrokes to steal passwords, revealing it as a Trojan.\n\n"
 
-    "*7. Network Worm*\n"
-    "A network worm is a malicious program that independently spreads its copies across network nodes, both locally and globally, without requiring user intervention. It exploits vulnerabilities to propagate, "
-    "often causing widespread disruption.\n"
-    "_Example_: A worm infects a corporate network, automatically spreading to connected devices and consuming bandwidth, slowing down operations.\n\n"
+                  "*7. Network Worm*\n"
+                  "A network worm is a malicious program that independently spreads its copies across network nodes, both locally and globally, without requiring user intervention. It exploits vulnerabilities to propagate, "
+                  "often causing widespread disruption.\n"
+                  "_Example_: A worm infects a corporate network, automatically spreading to connected devices and consuming bandwidth, slowing down operations.\n\n"
 
-    "*8. Computer Virus*\n"
-    "A computer virus is a malicious software fragment that embeds itself in other files or programs, spreading when those files are executed. It can corrupt data, degrade system performance, "
-    "or perform unauthorized actions.\n"
-    "_Example_: A virus attached to an email attachment infects a user’s computer, corrupting critical files when the attachment is opened.\n\n"
+                  "*8. Computer Virus*\n"
+                  "A computer virus is a malicious software fragment that embeds itself in other files or programs, spreading when those files are executed. It can corrupt data, degrade system performance, "
+                  "or perform unauthorized actions.\n"
+                  "_Example_: A virus attached to an email attachment infects a user’s computer, corrupting critical files when the attachment is opened.\n\n"
 
-    "*9. Software Backdoor*\n"
-    "A software backdoor is a hidden feature or code embedded in software that, under specific conditions, activates undocumented functions, allowing unauthorized access or control. "
-    "It is often used by attackers to bypass security measures.\n"
-    "_Example_: A developer inserts a backdoor in an application, enabling remote access to the system when a specific command is entered.\n\n"
+                  "*9. Software Backdoor*\n"
+                  "A software backdoor is a hidden feature or code embedded in software that, under specific conditions, activates undocumented functions, allowing unauthorized access or control. "
+                  "It is often used by attackers to bypass security measures.\n"
+                  "_Example_: A developer inserts a backdoor in an application, enabling remote access to the system when a specific command is entered.\n\n"
 
-    "*10. Botnet*\n"
-    "A botnet is a collection of network devices infected by malicious software that allows them to be controlled remotely by a central command center. Botnets perform automated tasks, "
-    "such as launching coordinated attacks or sending spam, without user awareness.\n"
-    "_Example_: A hacker uses a botnet of compromised devices to launch a distributed denial-of-service attack against a website, overwhelming its servers.",
-    "questions":[
-        {
-            "question": "72. Define the concept of traffic filtering.",
-            "options": {
-                "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
-                "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
-                "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
-                "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
-                "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                  "*10. Botnet*\n"
+                  "A botnet is a collection of network devices infected by malicious software that allows them to be controlled remotely by a central command center. Botnets perform automated tasks, "
+                  "such as launching coordinated attacks or sending spam, without user awareness.\n"
+                  "_Example_: A hacker uses a botnet of compromised devices to launch a distributed denial-of-service attack against a website, overwhelming its servers.",
+        "questions": [
+            {
+                "question": "72. Define the concept of traffic filtering.",
+                "options": {
+                    "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
+                    "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
+                    "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
+                    "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
+                    "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "73. Define the concept of a firewall.",
-            "options": {
-                "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
-                "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
-                "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
-                "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
-                "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+            {
+                "question": "73. Define the concept of a firewall.",
+                "options": {
+                    "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
+                    "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
+                    "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
+                    "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
+                    "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "74. Define the concept of a proxy server.",
-            "options": {
-                "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
-                "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
-                "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
-                "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
-                "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+            {
+                "question": "74. Define the concept of a proxy server.",
+                "options": {
+                    "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
+                    "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
+                    "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
+                    "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
+                    "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "75. Define the concept of network traffic monitoring.",
-            "options": {
-                "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
-                "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
-                "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
-                "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
-                "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+            {
+                "question": "75. Define the concept of network traffic monitoring.",
+                "options": {
+                    "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
+                    "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
+                    "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
+                    "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
+                    "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                },
+                "correct": "d"
             },
-            "correct": "d"
-        },
-        {
-            "question": "76. Define the concept of an intrusion detection system.",
-            "options": {
-                "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
-                "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
-                "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
-                "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
-                "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+            {
+                "question": "76. Define the concept of an intrusion detection system.",
+                "options": {
+                    "a": "Processing of IP packets by routers and firewalls, leading to the discarding of some packets or altering their route.",
+                    "b": "A set of software and hardware tools that provide information protection for one part of a computer network from another by analyzing and filtering the traffic passing between them.",
+                    "c": "A specific type of application that acts as an intermediary between the client and server parts of distributed network applications, assuming that clients belong to an internal (protected) network and servers to an external (potentially dangerous) network.",
+                    "d": "A continuous process of instrumental automated monitoring of specific traffic parameters to verify compliance with service level agreements, network planning, and prevention of negative events such as technical failures, threats, and attacks by malicious actors.",
+                    "e": "A software or hardware tool that continuously monitors network traffic and system subject activities to prevent, detect, and log attacks."
+                },
+                "correct": "e"
             },
-            "correct": "e"
-        },
-        {
-            "question": "77. Define the concept of a Trojan program.",
-            "options": {
-                "a": "A malicious software fragment that can be embedded in other files.",
-                "b": "A malicious program that causes harm to a system while masquerading as a useful application.",
-                "c": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center.",
-                "d": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
-                "e": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information."
+            {
+                "question": "77. Define the concept of a Trojan program.",
+                "options": {
+                    "a": "A malicious software fragment that can be embedded in other files.",
+                    "b": "A malicious program that causes harm to a system while masquerading as a useful application.",
+                    "c": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center.",
+                    "d": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
+                    "e": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information."
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "78. Define the concept of a network worm.",
-            "options": {
-                "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
-                "b": "A malicious software fragment that can be embedded in other files.",
-                "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
-                "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+            {
+                "question": "78. Define the concept of a network worm.",
+                "options": {
+                    "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
+                    "b": "A malicious software fragment that can be embedded in other files.",
+                    "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
+                    "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+                },
+                "correct": "a"
             },
-            "correct": "a"
-        },
-        {
-            "question": "79. Define the concept of a computer virus.",
-            "options": {
-                "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
-                "b": "A malicious software fragment that can be embedded in other files.",
-                "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
-                "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+            {
+                "question": "79. Define the concept of a computer virus.",
+                "options": {
+                    "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
+                    "b": "A malicious software fragment that can be embedded in other files.",
+                    "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
+                    "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+                },
+                "correct": "b"
             },
-            "correct": "b"
-        },
-        {
-            "question": "80. Define the concept of a software backdoor.",
-            "options": {
-                "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
-                "b": "A malicious software fragment that can be embedded in other files.",
-                "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
-                "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+            {
+                "question": "80. Define the concept of a software backdoor.",
+                "options": {
+                    "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
+                    "b": "A malicious software fragment that can be embedded in other files.",
+                    "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
+                    "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+                },
+                "correct": "c"
             },
-            "correct": "c"
-        },
-        {
-            "question": "81. Define the concept of a botnet.",
-            "options": {
-                "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
-                "b": "A malicious software fragment that can be embedded in other files.",
-                "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
-                "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
-            },
-            "correct": "d"
-        }
-    ]
+            {
+                "question": "81. Define the concept of a botnet.",
+                "options": {
+                    "a": "A program capable of independently spreading its copies among nodes within a local network and via global connections, moving from one computer to another without user involvement.",
+                    "b": "A malicious software fragment that can be embedded in other files.",
+                    "c": "An object embedded in software that, under certain conditions, initiates undocumented functions, enabling unauthorized impacts on information.",
+                    "d": "A collection of network devices infiltrated by a program that performs automated actions based on commands from a remote control center."
+                },
+                "correct": "d"
+            }
+        ]
+    }
 }
-}
 
+# Topics and questions dataset in russian
 topics_ru = {
     "Основные понятия": [
         {
@@ -2049,7 +2051,7 @@ topics_ru = {
     ]
 }
 
-# O‘zbek tilidagi mavzular va savollar
+# Topics and questions dataset in uzbek
 topics_uz = {
     "Asosiy tushunchalar": [
         {
@@ -2909,10 +2911,45 @@ topics_uz = {
     ]
 }
 
+# News dataset
+news_data = [
+    {
+        "type": "photo",
+        "file_path": "news_dataset/photo/img1.png",
+        "text": {
+            "en": "New HTTPBot Botnet Launches 200+ Precision DDoS Attacks on Gaming and Tech Sectors \n\n Cybersecurity researchers are calling attention to a new botnet malware called HTTPBot that has been used to primarily single out the gaming industry, as well as technology companies and educational institutions in China. Over the past few months, it has expanded aggressively, continuously leveraging infected devices to launch external attacks, NSFOCUS said in a report published this week.By employing highly simulated HTTP Flood attacks and dynamic feature obfuscation techniques, it circumvents traditional rule-based detection mechanisms. HTTPBot, first spotted in the wild in August 2024, gets its name from the use of HTTP protocols to launch distributed denial-of-service attacks. Written in Golang, it's something of an anomaly given its targeting of Windows systems. The Windows-based botnet troja",
+            "uz": "📸 Yangi mavzuni ko‘ring!",
+            "ru": "📸 Посмотрите нашу новую тему!"
+        }
+    },
+    {
+        "type": "photo",
+        "file_path": "news_dataset/photo/img2.png",
+        "text": {
+            "en": "Fake Security Plugin on WordPress Enables Remote Admin Access for Attackers\n\n Cybersecurity researchers have shed light on a new campaign targeting WordPress sites that disguises the malware as a security plugin.The plugin, which goes by the name WP-antymalwary-bot.php, comes with a variety of features to maintain access, hide itself from the admin dashboard, and execute remote code. Pinging functionality that can report back to a command-and-control (C&C) server is also included, as is code that helps spread malware into other directories and inject malicious JavaScript responsible for serving ads, Wordfence's Marco Wotschka said in a report. First discovered during a site cleanup effort in late January 2025, the malware has since been detected in the wild with new variants. Some of the other names used for the plugin are listed below -addons.php -wpconsole.php -wp-performance-booster.php -scr.php",
+            "uz": "📸 Yangi mavzuni ko‘ring!",
+            "ru": "📸 Посмотрите нашу новую тему!"
+        }
+    },
+    {
+        "type": "video",
+        "file_path": "news_dataset/video/video1.mp4",
+        "text": {
+            "en": "🎥 Russia-Linked APT28 Exploited MDaemon Zero-Day to Hack Government Webmail Servers\n\n A Russia-linked threat actor has been attributed to a cyber espionage operation targeting webmail servers such as Roundcube, Horde, MDaemon, and Zimbra via cross-site scripting (XSS) vulnerabilities, including a then-zero-day in MDaemon, according to new findings from ESET. The activity, which commenced in 2023, has been codenamed Operation RoundPress by the Slovak cybersecurity company. It has been attributed with medium confidence to the Russian state-sponsored hacking group tracked as APT28, which is also referred to as BlueDelta, Fancy Bear, Fighting Ursa, Forest Blizzard, FROZENLAKE, Iron Twilight, ITG05, Pawn Storm, Sednit, Sofacy, and TA422. The ultimate goal of this operation is to steal confidential data from specific email accounts, ESET researcher Matthieu Faou said in a report shared with The Hacker News. Most victims are governmental entities and defense companies in Eastern Europe, although we have observed governments in Africa, Europe, and South America being targeted as well.",
+            "uz": "🎥 Botimizga tezkor kirish!",
+            "ru": "🎥 Быстрое знакомство с нашим ботом."
+        }
+    }
+]
+
+# User set to save first users ,using set to avoid duplicates
+saved_users = set()
+
 # User progress dictionary
 user_progress = {}
 
-user_selected_topic ={}
+# User selected topic to save selected topic temporarily to provide quizes
+user_selected_topic = {}
 
 # Language selection dictionary
 user_language = {}
@@ -2920,6 +2957,7 @@ user_language = {}
 # Language-specific messages
 messages = {
     "en": {
+
         "welcome": "Welcome! Please choose a language:",
         "choose_action": "Choose an action:",
         "choose_topic": "Choose a topic:",
@@ -2928,7 +2966,13 @@ messages = {
         "incorrect": "❌ Incorrect! Correct answer: {correct}",
         "quiz_completed": "Quiz completed. Correct answers: {score} out of {total}",
         "start_quiz_prompt": "Please start the quiz via '📘 Quiz'.",
-        "restart_quiz": "Please start the quiz again via '📘 Quiz'."
+        "restart_quiz": "Please start the quiz again via '📘 Quiz'.",
+        "intro": "🎓 *Welcome to Security QuizBot – your pocket learning companion!*\n\n"
+                 "Here, learning becomes fun and engaging. Choose from various topics, explore helpful theory, and test your knowledge with short quizzes.\n\n"
+                 "🧠 Learn smart.\n"
+                 "🎯 Practice daily.\n"
+                 "🏆 Track your improvement.\n\n"
+                 "Ready to get started? Let’s grow your knowledge 🚀"
     },
     "ru": {
         "welcome": "Добро пожаловать! Пожалуйста, выберите язык:",
@@ -2939,7 +2983,13 @@ messages = {
         "incorrect": "❌ Неправильно! Правильный ответ: {correct}",
         "quiz_completed": "Викторина завершена. Правильных ответов: {score} из {total}",
         "start_quiz_prompt": "Пожалуйста, начните викторину через '📘 Quiz'.",
-        "restart_quiz": "Пожалуйста, начните викторину заново через '📘 Quiz'."
+        "restart_quiz": "Пожалуйста, начните викторину заново через '📘 Quiz'.",
+        "intro": "🎓 *Добро пожаловать в Secure QuizBot – вашего карманного помощника в обучении!*\n\n"
+                 "Здесь учиться легко и интересно. Выбирайте тему, изучайте теорию и проходите короткие викторины.\n\n"
+                 "🧠 Учитесь с умом.\n"
+                 "🎯 Практикуйтесь каждый день.\n"
+                 "🏆 Отслеживайте прогресс.\n\n"
+                 "Готовы начать? Давайте расти вместе 🚀"
     },
     "uz": {
         "welcome": "Xush kelibsiz! Iltimos, tilni tanlang:",
@@ -2950,12 +3000,19 @@ messages = {
         "incorrect": "❌ Noto‘g‘ri! To‘g‘ri javob: {correct}",
         "quiz_completed": "Viktorina yakunlandi. To‘g‘ri javoblar: {score}/{total}",
         "start_quiz_prompt": "Iltimos, viktorinani '📘 Viktorina' orqali boshlang.",
-        "restart_quiz": "Iltimos, viktorinani yana '📘 Viktorina' orqali boshlang."
+        "restart_quiz": "Iltimos, viktorinani yana '📘 Viktorina' orqali boshlang.",
+        "intro": "🎓 *Secure QuizBot ga xush kelibsiz – sizning shaxsiy o‘quv yordamchingiz!*\n\n"
+                 "Bu yerda o‘rganish qiziqarli va samarali bo‘ladi. Mavzuni tanlang, nazariyani o‘rganing va qisqa testlar orqali bilimlaringizni sinab ko‘ring.\n\n"
+                 "🧠 Aql bilan o‘rganing.\n"
+                 "🎯 Har kuni mashq qiling.\n"
+                 "🏆 Rivojlanishingizni kuzating.\n\n"
+                 "Boshlashga tayyormisiz? Keling, bilim sari birga odimlaylik! 🚀"
     }
 }
 
-#to show language very first meny
-def show_language_menu(chat_id):
+
+# Function to draw languages buttons
+def get_languages_menu(chat_id):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(
         types.KeyboardButton("O‘zbek"),
@@ -2965,156 +3022,23 @@ def show_language_menu(chat_id):
     bot.send_message(chat_id, "🇺🇿 Tilni tanlang / 🇷🇺 Выберите язык / 🇬🇧 Choose a language:", reply_markup=markup)
 
 
-def get_main_menu_markup(lang):
+# Function to draw actions buttons
+def get_actions_menu(lang):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(
         types.KeyboardButton(
-        "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else  "📘 Quiz"),
+            "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else "📘 Quiz"),
         types.KeyboardButton(
-        "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
+            "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
         types.KeyboardButton(
-        "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
+            "📘 Yangiliklarni olish" if lang == "uz" else "📘 Получить новости" if lang == "ru" else "📘 Get news"),
+        types.KeyboardButton(
+            "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
     )
-    # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    # quiz_btn = "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else "📘 Quiz"
-    # theory_btn = "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"
-    # back_btn = "Ortga" if lang == "uz" else "Назад" if lang == "ru" else "Back"
-    # markup.add(types.KeyboardButton(quiz_btn), types.KeyboardButton(theory_btn), types.KeyboardButton(back_btn))
     return markup
 
 
-# Main menu
-@bot.message_handler(commands=['start'])
-def start_handler(message):
-    user_id = message.from_user.id
-    show_language_menu(message.chat.id)
-    user_language[user_id] = None  # Reset language selection
-
-
-# Language selection
-@bot.message_handler(func=lambda message: message.text in ["English", "Русский", "O‘zbek"])
-def language_handler(message):
-    user_id = message.from_user.id
-    if message.text == "English":
-        lang = "en"
-    elif message.text == "Русский":
-        lang = "ru"
-    else:
-        lang = "uz"
-    user_language[user_id] = lang
-    markup = get_main_menu_markup(lang)
-    # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    # markup.add(
-    #     types.KeyboardButton(
-    #     "📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else  "📘 Quiz"),
-    #     types.KeyboardButton(
-    #     "📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
-    #     types.KeyboardButton(
-    #     "📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
-    # )
-    # Add the "Back to Language Selection" button
-    bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
-
-# Quiz selection
-@bot.message_handler(func=lambda message: message.text in ["📘 Quiz","📘 Викторина", "📘 Viktorina"])
-def quiz_handler(message):
-    user_id = message.from_user.id
-    if user_id not in user_language or user_language[user_id] is None:
-        bot.reply_to(message, messages["en"]["welcome"])
-        return
-    lang = user_language[user_id]
-    topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    for topic in topics.keys():
-        markup.add(types.KeyboardButton(topic))
-    bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
-
-# new code for thero selection
-@bot.message_handler(func=lambda message: message.text in ["📘 Theory", "📘 Теория", "📘 Teoriya"])
-def theory_handler(message):
-    user_id = message.from_user.id
-    if user_id not in user_language or user_language[user_id] is None:
-        bot.reply_to(message, messages["en"]["welcome"])
-        return
-    lang = user_language[user_id]
-    topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    for topic in topics.keys():
-        markup.add(types.KeyboardButton(topic))
-
-    back_text = "Ortga harakatga" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
-    markup.add(types.KeyboardButton(back_text))
-
-    bot.set_state(user_id, "awaiting_theory_topic", message.chat.id)
-    bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
-
-
-#back button
-@bot.message_handler(func=lambda message: message.text in ["Ortga", "Назад", "Back"])
-def back_to_language_selection(message):
-    show_language_menu(message.chat.id)
-
-
-@bot.message_handler(state="awaiting_theory_topic")
-def theory_topic_selection_handler(message):
-    user_id = message.from_user.id
-    lang = user_language.get(user_id, "en")
-
-    back_text = "Ortga harakatga" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
-    if message.text == back_text:
-        # Send back to main action selection
-        # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        # markup.add(
-        #     types.KeyboardButton("📘 Viktorina" if lang == "uz" else "📘 Викторина" if lang == "ru" else "📘 Quiz"),
-        #     types.KeyboardButton("📘 Teoriya" if lang == "uz" else "📘 Теория" if lang == "ru" else "📘 Theory"),
-        #     types.KeyboardButton("📘 Ortga" if lang == "uz" else "📘 Назад" if lang == "ru" else "📘 Back")
-        # )
-        markup = get_main_menu_markup(lang)
-        bot.set_state(user_id, None, message.chat.id)
-        bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
-        return
-
-
-
-@bot.message_handler(func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "awaiting_theory_topic")
-def send_theory(message):
-    user_id = message.from_user.id
-    lang = user_language.get(user_id, "en")  # Fallback to English
-    topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
-    chosen_topic = message.text
-
-    if chosen_topic in topics:
-        theory_text = topics[chosen_topic]["theory"]
-
-        chunks = split_message(theory_text)
-        for chunk in chunks:
-            bot.send_message(message.chat.id, chunk)
-
-        bot.set_state(user_id, "theory_viewed" ,message.chat.id)
-
-        # markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-        #
-        # markup.add(
-        #     types.KeyboardButton("️️Boshlash" if lang == "uz" else "️️Начинат" if lang == "ru" else "️️Start quiz"),
-        #     types.KeyboardButton("Ortga" if lang == "uz" else "Назад" if lang == "ru" else "Back"))
-        # bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
-
-        user_selected_topic[user_id] = chosen_topic
-        markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton(text="Start quiz", callback_data="action:start_quiz"))
-        markup.add(types.InlineKeyboardButton(text="⬅️ Back to topics", callback_data="action:back_to_topics"))
-        bot.send_message(message.chat.id, "Choose:", reply_markup=markup)
-
-
-    else:
-        bot.reply_to(message, messages[lang]["invalid_topic"])
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-        for topic in topics.keys():
-            markup.add(types.KeyboardButton(topic))
-        bot.send_message(message.chat.id, messages[lang]["choose_topic"], reply_markup=markup)
-
-
-
+# Function to make text available due to 4096 character should be  in one message according toTelegram rule,
 def split_message(text, chunk_size=4000):
     lines = text.split('\n')
     chunks = []
@@ -3129,8 +3053,282 @@ def split_message(text, chunk_size=4000):
 
     if current_chunk:
         chunks.append(current_chunk)
-
     return chunks
+
+
+def get_user_language(lang_code: str) -> str:
+    """
+    Maps a Telegram language code to a supported language key.
+
+    Args:
+        lang_code (str): The Telegram language code (e.g., 'uz', 'ru', 'en').
+
+    Returns:
+        str: The corresponding language key used in your app ('uz', 'ru', or 'en').
+    """
+    if lang_code == "uz":
+        return "uz"
+    elif lang_code == "ru":
+        return "ru"
+    else:
+        return "en"
+
+
+def get_localized_data(lang: str, uz_data, en_data, ru_data):
+    """
+    Returns the appropriate dataset based on the selected language.
+
+    Args:
+        lang (str): Language key ('uz', 'en', or 'ru').
+        uz_data: Data for Uzbek.
+        en_data: Data for English.
+        ru_data: Data for Russian.
+
+    Returns:
+        The dataset corresponding to the language.
+    """
+
+    return uz_data if lang == "uz" else en_data if lang == "en" else ru_data
+
+
+# /start menu
+@bot.message_handler(commands=['start'])
+def start_handler(message):
+    """
+      Handles the /start command sent by the user.
+
+      This function:
+      - Detects the user's language (Uzbek, Russian, or English)
+      - Sends an introductory message
+      - Displays the language selection menu
+      - Saves the user ID if it's their first interaction
+
+      Args:
+          message (telebot.types.Message): The incoming message object from the user.
+
+      Returns:
+          NOne
+      """
+
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+    lang_code = message.from_user.language_code
+    # lang = "uz" if lang_code == "uz" else "ru" if lang_code == "ru" else "en"
+    lang = get_user_language(message.from_user.language_code)
+
+    user_language[user_id] = lang
+    # ✅ Save user if not already saved
+    if user_id not in saved_users:
+        saved_users.add(user_id)
+    bot.send_message(chat_id, messages[lang]["intro"], parse_mode="Markdown")
+    get_languages_menu(message.chat.id)
+    user_language[user_id] = None  # Reset language selection
+
+
+# Language selection
+@bot.message_handler(func=lambda message: message.text in ["English", "Русский", "O‘zbek"])
+def language_handler(message):
+    """
+    Handles the language selection message from the user.
+
+    This function:
+    - Sets the selected language ('en', 'ru', or 'uz') for the user
+    - Updates the `user_language` dictionary
+    - Sends the user an action menu in the selected language
+
+    Args:
+        message (telebot.types.Message): The incoming message containing the selected language.
+
+    Returns:
+        None
+    """
+
+    user_id = message.from_user.id
+    lang = get_user_language(message.from_user.language_code)
+    user_language[user_id] = lang
+    markup = get_actions_menu(lang)
+    # Add the "Back to Language Selection" button
+    bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
+
+
+# Quiz selection
+@bot.message_handler(func=lambda message: message.text in ["📘 Quiz", "📘 Викторина", "📘 Viktorina"])
+def quiz_handler(message):
+    user_id = message.from_user.id
+    if user_id not in user_language or user_language[user_id] is None:
+        bot.reply_to(message, messages["en"]["welcome"])
+        return
+    lang = user_language[user_id]
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
+
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    for topic in topics.keys():
+        markup.add(types.KeyboardButton(topic))
+
+    bot.set_state(user_id, "from_quiz_side", message.chat.id)
+
+    back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    markup.add(types.KeyboardButton(back_text))
+    bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
+
+
+# new code for thero selection
+@bot.message_handler(func=lambda message: message.text in ["📘 Theory", "📘 Теория", "📘 Teoriya"])
+def theory_handler(message):
+    user_id = message.from_user.id
+    if user_id not in user_language or user_language[user_id] is None:
+        bot.reply_to(message, messages["en"]["welcome"])
+        return
+    lang = user_language[user_id]
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    for topic in topics.keys():
+        markup.add(types.KeyboardButton(topic))
+
+    back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    markup.add(types.KeyboardButton(back_text))
+
+    bot.set_state(user_id, "awaiting_theory_topic", message.chat.id)
+    bot.reply_to(message, messages[lang]["choose_topic"], reply_markup=markup)
+
+
+# news
+@bot.message_handler(func=lambda message: message.text in ["📘 Get news", "📘 Получить новости", "📘 Get news"])
+def news_handler(message):
+    user_id = message.from_user.id
+    if user_id not in user_language or user_language[user_id] is None:
+        bot.reply_to(message, messages["en"]["welcome"])
+        return
+    lang = user_language[user_id]
+
+    last_news_text = "🆕 So‘nggi yangilik" if lang == "uz" else "🆕 Последняя новость" if lang == "ru" else "🆕 Get Last News"
+    all_news_text = "📚 Barcha yangiliklar" if lang == "uz" else "📚 Все новости" if lang == "ru" else "📚 Get All News"
+    # back_to_news_main = "Yangilikarga qaytish" if lang == "uz" else "Вернуться к новостям" if lang == "ru" else "📚 Bact to news"
+    back_to_action = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(
+        types.KeyboardButton(last_news_text),
+        types.KeyboardButton(all_news_text),
+        types.KeyboardButton(back_to_action)
+    )
+
+    bot.send_message(message.chat.id, "📰 News options:", reply_markup=markup)
+    bot.set_state(user_id, "awaiting_news_choice", message.chat.id)
+
+
+# def send_news_item(chat_id, news, lang):
+#     text = news["text"].get(lang, news["text"]["en"])
+#     file_path = news["file_path"]
+#
+#     if news["type"] == "photo":
+#         with open(file_path, 'rb') as photo:
+#             bot.send_photo(chat_id, photo=photo, caption=text)
+#     elif news["type"] == "video":
+#         with open(file_path, 'rb') as video:
+#             bot.send_video(chat_id, video=video, caption=text)
+
+def send_news_item(chat_id, news, lang):
+    text = news["text"].get(lang, news["text"]["en"])
+    file_path = news["file_path"]
+
+    # Truncate caption if it's too long
+    max_caption_length = 1024
+    if len(text) > max_caption_length:
+        text = text[:1021] + "..."
+
+    if news["type"] == "photo":
+        with open(file_path, 'rb') as photo:
+            bot.send_photo(chat_id, photo=photo, caption=text)
+    elif news["type"] == "video":
+        with open(file_path, 'rb') as video:
+            bot.send_video(chat_id, video=video, caption=text)
+
+
+@bot.message_handler(
+    func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "awaiting_news_choice")
+def news_choice_handler(message):
+    user_id = message.from_user.id
+    lang = user_language.get(user_id, "en")
+    text = message.text
+
+    if text in ["🆕 So‘nggi yangilik", "🆕 Последняя новость", "🆕 Get Last News"]:
+        news = news_data[-1]
+        send_news_item(message.chat.id, news, lang)
+
+    elif text in ["📚 Barcha yangiliklar", "📚 Все новости", "📚 Get All News"]:
+        for news in news_data:
+            send_news_item(message.chat.id, news, lang)
+
+    elif text in ["Orqaga qaytish", "Назад работа", "Back to actions"]:
+        bot.delete_state(message.chat.id)
+        markup = get_actions_menu(lang)
+        bot.send_message(message.chat.id, messages[lang]["choose_action"], reply_markup=markup)
+
+    else:
+        bot.reply_to(message, "⚠️ Unknown option.")
+
+
+# back button
+@bot.message_handler(func=lambda message: message.text in ["📘 Ortga", "📘 Назад", "📘 Back"])
+def back_to_language_selection(message):
+    get_languages_menu(message.chat.id)
+
+
+@bot.message_handler(func=lambda message: message.text in ["Orqaga qaytish", "Назад работа", "Back to actions"])
+def back_to_actions_selection(message):
+    # Detect language based on message text
+    if message.text == "Orqaga qaytish":
+        lang = "uz"
+    elif message.text == "Назад работа":
+        lang = "ru"
+    elif message.text == "Back to actions":
+        lang = "en"
+    else:
+        lang = "en"  # default fallback
+    markup = get_actions_menu(lang)
+    # bot.reply_to(message, messages[lang]["choose_action"], reply_markup=markup)
+    bot.send_message(message.chat.id, messages[lang]["choose_action"], reply_markup=markup)
+
+
+@bot.message_handler(
+    func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "awaiting_theory_topic")
+def send_theory(message):
+    user_id = message.from_user.id
+    lang = user_language.get(user_id, "en")  # Fallback to English
+    topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    chosen_topic = message.text
+
+    if chosen_topic in topics:
+        theory_text = topics[chosen_topic]["theory"]
+
+        chunks = split_message(theory_text)
+        for chunk in chunks:
+            bot.send_message(message.chat.id, chunk)
+        bot.set_state(user_id, "theory_viewed", message.chat.id)
+
+        user_selected_topic[user_id] = chosen_topic
+        back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+
+        reply_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        reply_keyboard.add(back_text)
+
+        # Send question with inline options AND reply keyboard (back button)
+        bot.send_message(message.chat.id, "👇", reply_markup=reply_keyboard)
+
+        markup = types.InlineKeyboardMarkup()
+        markup.add(types.InlineKeyboardButton(text="Start quiz", callback_data="action:start_quiz"))
+        markup.add(types.InlineKeyboardButton(text="⬅️ Back to topics", callback_data="action:back_to_topics"))
+        bot.send_message(message.chat.id, "Choose:", reply_markup=markup)
+
+
+    else:
+        bot.reply_to(message, messages[lang]["invalid_topic"])
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        for topic in topics.keys():
+            markup.add(types.KeyboardButton(topic))
+        bot.send_message(message.chat.id, messages[lang]["choose_topic"], reply_markup=markup)
 
 
 @bot.message_handler(func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "theory_viewed")
@@ -3151,7 +3349,8 @@ def handle_quiz_start_or_back(message):
             return
 
         # Get quiz data
-        quiz = topics_uz[topic]["quiz"] if lang == "uz" else topics_eng[topic]["quiz"] if lang == "en" else topics_ru[topic]["quiz"]
+        quiz = topics_uz[topic]["quiz"] if lang == "uz" else topics_eng[topic]["quiz"] if lang == "en" else \
+            topics_ru[topic]["quiz"]
 
         if not quiz:
             bot.send_message(chat_id, "❌ Quiz not available for this topic.")
@@ -3182,7 +3381,8 @@ def handle_quiz_start_or_back(message):
     else:
         bot.send_message(chat_id, "❓ Invalid option. Please choose again.")
         bot.set_state(user_id, "awaiting_theory_topic", chat_id)
-        topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+        # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+        topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
 
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         for topic in topics.keys():
@@ -3216,21 +3416,25 @@ def handle_quiz_callback(call):
 
             # ✅ Initialize quiz progress here
         user_progress[user_id] = {
-                "language": lang,
-                "topic": topic,
-                "index": 0,
-                "score": 0
+            "language": lang,
+            "topic": topic,
+            "index": 0,
+            "score": 0
         }
         bot.set_state(user_id, "in_quiz", chat_id)
         send_question(chat_id, user_id)
 
     elif data == "back_to_topics":
         bot.set_state(user_id, "awaiting_theory_topic", chat_id)
-        topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+        # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+        topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
 
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         for topic in topics.keys():
             markup.add(types.KeyboardButton(topic))
+
+        back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+        markup.add(types.KeyboardButton(back_text))
 
         bot.send_message(chat_id, messages[lang]["choose_topic"], reply_markup=markup)
 
@@ -3238,14 +3442,16 @@ def handle_quiz_callback(call):
 
 
 # Start quiz for selected topic
-@bot.message_handler(func=lambda message: message.text in topics_ru or message.text in topics_uz or message.text in topics_eng)
+@bot.message_handler(
+    func=lambda message: message.text in topics_ru or message.text in topics_uz or message.text in topics_eng)
 def start_quiz(message):
     user_id = message.from_user.id
     if user_id not in user_language or user_language[user_id] is None:
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
     topic = message.text
     if topic not in topics:
         bot.reply_to(message, messages[lang]["choose_topic"])
@@ -3259,16 +3465,39 @@ def start_quiz(message):
     send_question(message.chat.id, user_id)
 
 
-
-# new code for printing theory by topic
-@bot.message_handler(func=lambda message: message.text in topics_ru or message.text in topics_uz or message.text in topics_eng)
+# Start quiz for selected topic
+@bot.message_handler(func=lambda message: bot.get_state(message.from_user.id, message.chat.id) == "from_quiz_side")
 def start_quiz(message):
     user_id = message.from_user.id
     if user_id not in user_language or user_language[user_id] is None:
         bot.reply_to(message, messages["en"]["welcome"])
         return
     lang = user_language[user_id]
-    topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
+    topic = message.text
+    if topic not in topics:
+        bot.reply_to(message, messages[lang]["choose_topic"])
+        return
+    user_progress[user_id] = {
+        "topic": topic,
+        "index": 0,
+        "score": 0,
+        "language": lang
+    }
+    send_question(message.chat.id, user_id)
+
+
+# new code for printing theory by topic
+@bot.message_handler(
+    func=lambda message: message.text in topics_ru or message.text in topics_uz or message.text in topics_eng)
+def start_quiz(message):
+    user_id = message.from_user.id
+    if user_id not in user_language or user_language[user_id] is None:
+        bot.reply_to(message, messages["en"]["welcome"])
+        return
+    lang = user_language[user_id]
+    topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
     topic = message.text
     if topic not in topics:
         bot.reply_to(message, messages[lang]["choose_topic"])
@@ -3285,16 +3514,6 @@ def start_quiz(message):
     # send_question(message.chat.id, user_id)
 
 
-
-
-
-
-
-
-
-
-
-
 # Send question to user
 def send_question(chat_id, user_id):
     if user_id not in user_progress:
@@ -3303,11 +3522,21 @@ def send_question(chat_id, user_id):
         return
 
     lang = user_progress[user_id]["language"]
-    topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
+
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
     # questions = topics[topic]
     questions = topics[topic]["questions"]
+
+    # back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+    #
+    # reply_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    # reply_keyboard.add(back_text)
+    #
+    # # Send question with inline options AND reply keyboard (back button)
+    # bot.send_message(chat_id, message_text, reply_markup=reply_keyboard)
 
     if index >= len(questions):
         bot.send_message(
@@ -3325,6 +3554,14 @@ def send_question(chat_id, user_id):
     options_text = "\n".join([f"{key}) {val}" for key, val in question["options"].items()])
     message_text = f"{question['question']}\n\n{options_text}"
 
+    back_text = "Orqaga qaytish" if lang == "uz" else "Назад работа" if lang == "ru" else "Back to actions"
+
+    reply_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    reply_keyboard.add(back_text)
+
+    # Send question with inline options AND reply keyboard (back button)
+    bot.send_message(chat_id, message_text, reply_markup=reply_keyboard)
+
     # Faqat harfli tugmalar (a, b, c va h.k.) yaratamiz
     markup = types.InlineKeyboardMarkup()
     for key in question["options"].keys():
@@ -3332,8 +3569,9 @@ def send_question(chat_id, user_id):
 
     bot.send_message(chat_id, message_text, reply_markup=markup)
 
+
 # Handle user answers
-@bot.callback_query_handler(func=lambda call: call.data in ['a', 'b', 'c', 'd','e'])
+@bot.callback_query_handler(func=lambda call: call.data in ['a', 'b', 'c', 'd', 'e'])
 def answer_handler(call):
     user_id = call.from_user.id
     data = call.data
@@ -3344,7 +3582,8 @@ def answer_handler(call):
         return
 
     lang = user_progress[user_id]["language"]
-    topics = topics_uz if lang == "uz" else topics_eng if lang=="en" else topics_ru
+    # topics = topics_uz if lang == "uz" else topics_eng if lang == "en" else topics_ru
+    topics = get_localized_data(lang, topics_uz, topics_eng, topics_ru)
     topic = user_progress[user_id]["topic"]
     index = user_progress[user_id]["index"]
     # question = topics[topic][index]
@@ -3362,6 +3601,7 @@ def answer_handler(call):
 
     user_progress[user_id]["index"] += 1
     send_question(call.message.chat.id, user_id)
+
 
 # Start the bot
 if __name__ == '__main__':
